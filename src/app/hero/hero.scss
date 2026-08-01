@@ -1,0 +1,75 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    min-height: 100dvh;
+    padding: 0 100px;
+    background-color: #FFFCF3;
+}
+
+h1 {
+    font-family: "syne";
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -2.5%;
+    color: #000000;
+}
+
+.hero-name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 750px;
+}
+
+.vector {
+    flex: 1;
+    height: 3px;
+}
+
+.name {
+    font-family: "overpass";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -2.5%;
+    color: #00BC8F;
+    white-space: nowrap;
+}
+
+.hero-email {
+    position: absolute;
+    bottom: 111px;
+    left: 42px;
+    font-family: "overpass";
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: -2.5%;
+    rotate: -90deg;
+}
+
+.hero-scroll {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    align-items: center;
+    gap: 6px;
+
+    & img{
+        width: 50px;
+        height: 90px;
+    }
+
+    & p {
+        font-family: "overpass";
+        font-weight: 300;
+        font-size: 1rem;
+        letter-spacing: -2.5%;
+    }
+}
