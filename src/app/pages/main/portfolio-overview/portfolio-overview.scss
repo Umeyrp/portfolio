@@ -1,0 +1,17 @@
+@use '../../../../styles/mixins' as *;
+
+.portfolio-overview-section {
+    gap: 35px;
+    margin-bottom: 120px;
+    padding: 0 100px;
+    @include flex(column, center, center);
+
+    & h2 {
+        @include font(syne, 800, 78px, 100%, 1%);
+    }
+
+    & p {
+        text-align: center;
+        @include font(overpass, 400, 22px, 120%, 0%);
+    }
+}
