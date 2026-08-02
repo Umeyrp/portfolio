@@ -1,0 +1,57 @@
+@use '../../../../styles/mixins' as *;
+
+.about-me-section {
+    display: flex;
+    gap: 87px;
+    margin-top: 160px;
+    padding: 0 100px;
+}
+
+.about-me-left {
+    @include flex(column);
+    gap: 48px;
+
+    & h2 {
+        font-family: "syne";
+        font-size: 78px;
+        font-weight: 800;
+        letter-spacing: 1%;
+    }
+
+    & p {
+        @include font("overpass", 400, 22px, 120%m 0%)
+    }
+
+    & .info-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        & .info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            & img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    & button {
+        width: auto;
+        padding: 20px 60px;
+        background-color: #FFFCF3;
+        border: 4px solid black;
+        align-self: center;
+        @include font("overpass", 400, 1rem, 120%, 0%);
+    }
+}
+
+.about-me-right{
+    & img{
+        width: 533px;
+        height: 533px;
+    }
+}
