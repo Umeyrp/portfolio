@@ -2,46 +2,12 @@
     <div class="skills-wrapper">
         <h2>My Skills</h2>
         <div class="skills-item-wrapper">
+            @for (skill of skills; track $index) {
             <div class="skills-item">
-                <img src="/images/angular-logo.svg" alt="">
-                <p>Angular</p>
+                <img src="/images/{{skill}}-logo.svg" alt="">
+                <p>{{skill}}</p>
             </div>
-            <div class="skills-item">
-                <img src="/images/angular-logo.svg" alt="">
-                <p>Angular</p>
-            </div>
-            <div class="skills-item">
-                <img src="/images/angular-logo.svg" alt="">
-                <p>Angular</p>
-            </div>
-            <div class="skills-item">
-                <img src="/images/angular-logo.svg" alt="">
-                <p>Angular</p>
-            </div>
-            <div class="skills-item">
-                <img src="/images/angular-logo.svg" alt="">
-                <p>Angular</p>
-            </div>
-            <div class="skills-item">
-                <img src="/images/angular-logo.svg" alt="">
-                <p>Angular</p>
-            </div>
-            <div class="skills-item">
-                <img src="/images/angular-logo.svg" alt="">
-                <p>Angular</p>
-            </div>
-            <div class="skills-item">
-                <img src="/images/angular-logo.svg" alt="">
-                <p>Angular</p>
-            </div>
-            <div class="skills-item">
-                <img src="/images/angular-logo.svg" alt="">
-                <p>Angular</p>
-            </div>
-            <div class="skills-item">
-                <img src="/images/angular-logo.svg" alt="">
-                <p>Angular</p>
-            </div>
+            }
         </div>
         <div class="contact-me-wrapper">
             <img src="/images/skills-hat.svg" alt="">
