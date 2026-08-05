@@ -6,10 +6,11 @@ import { ArrowRight } from './arrow-right/arrow-right';
 import { Skills } from './skills/skills';
 import { ArrowLeft } from './arrow-left/arrow-left';
 import { PortfolioOverview } from './portfolio-overview/portfolio-overview';
+import { References } from './references/references';
 
 @Component({
     selector: 'app-main',
-    imports: [Header, Hero, AboutMe, ArrowRight, Skills, ArrowLeft, PortfolioOverview],
+    imports: [Header, Hero, AboutMe, ArrowRight, Skills, ArrowLeft, PortfolioOverview, References],
     templateUrl: './main.html',
     styleUrl: './main.scss',
 })

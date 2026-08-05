@@ -1,0 +1,11 @@
+@use '../../../../styles/mixins' as *;
+
+.references-section {
+    margin-top: 120px;
+    padding: 0 100px;
+
+    & h2 {
+        text-align: center;
+        @include font(syne, 800, 78px, 100%, 1%);
+    }
+}
