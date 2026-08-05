@@ -85,3 +85,12 @@
     font-variant-numeric: lining-nums proportional-nums;
     @include font(syne, 700, 48px, 120%, 0%);
 }
+
+.even {
+    flex-direction: row-reverse;
+
+    & .project-right>h3 {
+        left: 0;
+        right: unset;
+    }
+}

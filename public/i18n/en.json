@@ -1,0 +1,7 @@
+{
+  "app": {
+    "hello": "hello {{value}}",
+    "title": "Translation Demo",
+    "MySkills": "My Skills"
+  }
+}

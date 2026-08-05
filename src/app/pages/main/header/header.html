@@ -1,6 +1,12 @@
 <header>
     <div class="header-content">
         <img src="/images/initial.svg" alt="">
-        <img src="/images/menu.svg" alt="">
+        <div class="menu">
+            <div class="language">
+                <button (click)="switchLanguage('en')"  [class.active]="languageService.currentLanguage() === 'en'">EN</button>
+                <button (click)="switchLanguage('de')" [class.active]="languageService.currentLanguage() === 'de'">DE</button>
+            </div>
+            <img src="/images/menu.svg" alt="">
+        </div>
     </div>
 </header>
