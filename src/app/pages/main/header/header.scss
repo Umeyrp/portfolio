@@ -30,13 +30,32 @@ header {
     gap: 8px;
 
     & button {
+        position: relative;
         padding: 3px 6px;
         background-color: unset;
         border: 2px solid transparent;
+        cursor: pointer;
         @include font(syne, 700, 1rem, 120%, 0%);
 
         &.active {
             border: 2px solid #00BC8F;
         }
+
+        &:active {
+            border: 2px solid black;
+        }
+
+        &:not(.active):not(:active):hover {
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 50%;
+                height: 2px;
+                background-color: black;
+            }
+        }
+
     }
 }
