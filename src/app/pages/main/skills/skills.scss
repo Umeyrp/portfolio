@@ -16,7 +16,12 @@
         left: 50%;
         padding: 10px;
         background-color: #FFFCF3;
+        transition: color 100ms ease-in-out;
         transform: translateX(-50%);
+
+        &:hover {
+            color: #00BC8F;
+        }
     }
 }
 
@@ -31,6 +36,7 @@
 .skills-item {
     @include flex(column, center, center);
     gap: 10px;
+    transition: all 100ms ease-in-out;
 
     & img {
         width: 71px;
@@ -39,6 +45,10 @@
 
     & p {
         @include font("overpass", 700, 1rem, 120%, 0%);
+    }
+
+    &:hover {
+        color: #00BC8F;
     }
 }
 
@@ -58,9 +68,71 @@
         @include font("overpass", 400, 22px, 120%, 0%);
         align-self: end;
     }
+}
 
-    & span {
-        padding: 5px 10px;
-        color: #00BC8F;
+span {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: 400;
+    color: #00BC8F;
+    transition: all 100ms ease-in-out;
+    cursor: pointer;
+
+    &::before {
+        display: block;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        font-weight: 700;
+        content: attr(data-text);
+    }
+
+    &::after {
+        position: absolute;
+        bottom: -2px;
+        left: 70px;
+        width: 40%;
+        height: 2px;
+        visibility: hidden;
+        background-color: currentColor;
+        content: "";
+        transform: translateX(-20%);
+        transition: transform 100ms ease-in;
+    }
+
+    &:hover {
+        font-weight: 700;
+
+        &::after {
+            visibility: visible;
+            transform: translateX(0);
+        }
+    }
+}
+
+.icon-wrapper {
+    display: inline-block;
+    perspective: 400px;
+}
+
+.icon-wrapper img {
+    display: block;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: visible;
+}
+
+.icon-wrapper:hover img {
+    animation: flip-once 0.3s ease-in-out forwards;
+}
+
+@keyframes flip-once {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
     }
 }

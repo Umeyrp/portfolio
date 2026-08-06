@@ -4,14 +4,19 @@
         <div class="skills-item-wrapper">
             @for (skill of skills; track $index) {
             <div class="skills-item">
-                <img src="/images/skills_logos/{{skill}}-logo.svg" alt="">
+                <div class="icon-wrapper">
+                    <img src="/images/skills_logos/{{skill}}-logo.svg" alt="">
+                </div>
                 <p>{{skill}}</p>
             </div>
             }
         </div>
         <div class="contact-me-wrapper">
-            <img src="/images/skills-hat.svg" alt="">
-            <p>Don’t see the skill you need? <span>Contact me</span> I’m always ready to learn!</p>
+            <div class="icon-wrapper">
+                <img src="/images/skills-hat.svg" alt="">
+            </div>
+            <p>Don't see the skill you need? <span data-text="Contact me">Contact me</span> I'm always ready to learn!
+            </p>
         </div>
     </div>
 </section>

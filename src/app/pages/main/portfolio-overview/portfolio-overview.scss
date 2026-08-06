@@ -11,7 +11,12 @@
     @include flex(column, center, center);
 
     & h2 {
+        transition: color 100ms ease-in-out;
         @include font(syne, 800, 78px, 100%, 1%);
+
+        &:hover {
+            color: #00BC8F;
+        }
     }
 
     & p {

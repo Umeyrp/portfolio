@@ -7,8 +7,13 @@
     color: #FFFCF3;
 
     &>h2 {
-        padding-top: 182px;
+        width: fit-content;
+        transition: all 100ms ease-in-out;
         @include font(syne, 800, 78px, 100%, 0%);
+
+        &:hover {
+            color: #00BC8F;
+        }
     }
 }
 
@@ -47,6 +52,13 @@
             @include font(overpass, 400, 16px, 120%, 0%);
             color: #FFFCF3;
         }
+
+        &:hover {
+            &:hover {
+                box-shadow: inset 0 0 0 4px #FFFCF3;
+                border-bottom: 2px solid transparent;
+            }
+        }
     }
 
     & textarea {
@@ -68,20 +80,6 @@
     }
 }
 
-.checkbox {
-    display: flex;
-    gap: 4px;
-
-    &>p {
-        @include font(overpass, 400, 14px, 120%, 0%);
-    }
-
-    & a {
-        text-decoration: none;
-        color: #00BC8F;
-    }
-}
-
 .footer-bottom {
     position: relative;
     display: flex;
@@ -92,9 +90,49 @@
     position: absolute;
     right: 0;
     bottom: -20px;
+    text-decoration: none;
     color: #FFFCF3;
     @include font(overpass, 400, 16px, 120%, 0%);
+
+    &:hover {
+        font-weight: 700;
+    }
+}
+
+
+.footer-legal {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    @include font(overpass, 400, 16px, 120%, 0%);
+    color: #FFFCF3;
     text-decoration: none;
+    display: inline-block;
+    transition: all 100ms ease-in-out;
+    cursor: pointer;
+
+    &::after {
+        color: #00BC8F;
+        position: absolute;
+        bottom: -7px;
+        left: 40px;
+        width: 60%;
+        height: 3px;
+        visibility: hidden;
+        background-color: currentColor;
+        content: "";
+        transform: translateX(-50%);
+        transition: transform 100ms ease-in-out;
+    }
+
+    &:hover {
+        font-weight: 700;
+
+        &::after {
+            visibility: visible;
+            transform: translateX(0);
+        }
+    }
 }
 
 .footer-socials {
@@ -102,9 +140,17 @@
     align-items: center;
     gap: 42px;
 
-    & a img {
-        width: 40px;
-        height: 40px;
+    .social-link {
+        display: inline-block;
+    }
+
+    .social-icon {
+        display: inline-block;
+        transition: transform 300ms ease-in-out;
+    }
+
+    .social-link:hover .social-icon {
+        transform: translateY(-20px);
     }
 }
 
@@ -114,11 +160,106 @@
     align-items: start;
     gap: 17px;
 
-    & img {
+    & svg {
         height: 30px;
     }
 
     & p {
         @include font(overpass, 400, 22px, 120%, 0%);
     }
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+
+    &>p {
+        margin-top: 2.5px;
+        @include font(overpass, 400, 14px, 120%, 0%);
+    }
+
+    &:hover {
+        & .privacy {
+            font-weight: 700;
+        }
+    }
+}
+
+.privacy {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    text-decoration: none;
+    color: #00BC8F;
+    transition: all 100ms ease-in;
+    cursor: pointer;
+}
+
+.privacy::before {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    font-weight: 700;
+    content: attr(data-text);
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox-visual {
+    position: relative;
+    display: inline-flex;
+}
+
+.checkbox-visual::before {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    width: 22px;
+    height: 22px;
+    background: #00BC8F;
+    border-radius: 50%;
+    opacity: 0;
+    content: "";
+    transform: translate(-50%, -50%);
+    transition: opacity .2s;
+}
+
+.checkbox:hover .checkbox-visual::before {
+    opacity: 1;
+}
+
+.checkmark {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid white;
+    transition: 0.2s;
+}
+
+.checkmark::after {
+    position: relative;
+    z-index: 0;
+    display: none;
+    width: 6px;
+    height: 12px;
+    margin-bottom: 5px;
+    border: 2px solid white;
+    content: "";
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+input:checked+.checkmark::after {
+    display: block;
 }
