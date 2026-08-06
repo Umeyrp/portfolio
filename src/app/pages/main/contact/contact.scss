@@ -1,8 +1,8 @@
-@use '../../../../styles/mixins' as *;
+@use 'mixins' as *;
 
-.footer-section {
+.contact-section {
     padding: 0 100px;
-    padding-bottom: 46px;
+    padding-bottom: 51px;
     background-color: black;
     color: #FFFCF3;
 
@@ -77,95 +77,6 @@
         cursor: pointer;
         align-self: center;
         @include font(overpass, 400, 24px, 120%, 0%);
-    }
-}
-
-.footer-bottom {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-legal {
-    position: absolute;
-    right: 0;
-    bottom: -20px;
-    text-decoration: none;
-    color: #FFFCF3;
-    @include font(overpass, 400, 16px, 120%, 0%);
-
-    &:hover {
-        font-weight: 700;
-    }
-}
-
-
-.footer-legal {
-    position: absolute;
-    right: 0;
-    bottom: -20px;
-    @include font(overpass, 400, 16px, 120%, 0%);
-    color: #FFFCF3;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 100ms ease-in-out;
-    cursor: pointer;
-
-    &::after {
-        color: #00BC8F;
-        position: absolute;
-        bottom: -7px;
-        left: 40px;
-        width: 60%;
-        height: 3px;
-        visibility: hidden;
-        background-color: currentColor;
-        content: "";
-        transform: translateX(-50%);
-        transition: transform 100ms ease-in-out;
-    }
-
-    &:hover {
-        font-weight: 700;
-
-        &::after {
-            visibility: visible;
-            transform: translateX(0);
-        }
-    }
-}
-
-.footer-socials {
-    display: flex;
-    align-items: center;
-    gap: 42px;
-
-    .social-link {
-        display: inline-block;
-    }
-
-    .social-icon {
-        display: inline-block;
-        transition: transform 300ms ease-in-out;
-    }
-
-    .social-link:hover .social-icon {
-        transform: translateY(-20px);
-    }
-}
-
-.footer-branding {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 17px;
-
-    & svg {
-        height: 30px;
-    }
-
-    & p {
-        @include font(overpass, 400, 22px, 120%, 0%);
     }
 }
 

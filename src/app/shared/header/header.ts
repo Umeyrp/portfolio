@@ -1,5 +1,5 @@
-import { Component, inject, signal } from '@angular/core';
-import { LanguageService } from '../../../services/language';
+import { Component, inject, input, signal } from '@angular/core';
+import { LanguageService } from '../../services/language';
 
 @Component({
     selector: 'app-header',
@@ -8,6 +8,7 @@ import { LanguageService } from '../../../services/language';
     styleUrl: './header.scss',
 })
 export class Header {
+    showLanguageButtons = input(true);
     protected languageService = inject(LanguageService);
 
     switchLanguage(language: string) {

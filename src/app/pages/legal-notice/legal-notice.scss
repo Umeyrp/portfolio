@@ -1,0 +1,53 @@
+@use "mixins" as *;
+
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 64px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    padding: 0px 200px;
+}
+
+h1 {
+    width: fit-content;
+    transition: color 100ms ease-in-out;
+    @include font(syne, 800, 78px, 100%, 1%);
+
+    &:hover {
+        color: #00BC8F;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.subtitle-box {
+    display: flex;
+    flex-direction: column;
+
+    & h2 {
+        color: #00BC8F;
+        @include font(overpass, 700, 19px, 120%, 0%);
+    }
+
+    & p {
+        color: black;
+        @include font(overpass, 400, 1rem, 120%, 0%);
+    }
+
+    & span {
+        color: #00BC8F;
+        @include font(overpass, 400, 1rem, 120%, 0%);
+    }
+}

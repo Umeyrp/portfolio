@@ -1,28 +1,4 @@
 <footer class="footer-section">
-    <h2>Say Hi!</h2>
-    <section class="contact">
-        <header class="contact-header">
-            <h3>Want to discuss a new project?</h3>
-            <p>Say hello! Let's discuss your ideas and make it happen.</p>
-        </header>
-        <form class="form">
-            <input type="text" placeholder="Your name">
-            <input type="text" placeholder="Your email">
-            <textarea name="message" placeholder="Your message" id=""></textarea>
-            <label class="checkbox">
-                <span class="checkbox-visual">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </span>
-                <p>
-                    I've read the <a href="#" data-text="privacy policy" class="privacy">privacy policy</a> and agree to
-                    the processing
-                    of my data as outlined.
-                </p>
-            </label>
-            <button>Send message</button>
-        </form>
-    </section>
     <div class="footer-bottom">
         <div class="footer-branding">
             <svg width="67" height="30" viewBox="0 0 67 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +15,7 @@
         </div>
 
         <nav class="footer-socials">
-            <a href="#" class="social-link">
+            <a href="https://github.com/Umeyrp" target="_blank" class="social-link">
                 <span class="social-icon">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -48,7 +24,7 @@
                     </svg>
                 </span>
             </a>
-            <a href="#" class="social-link">
+            <a href="mailto:mu.kemiksiz@gmail.com" class="social-link">
                 <span class="social-icon">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -68,6 +44,6 @@
             </a>
         </nav>
 
-        <a class="footer-legal" href="#">Legal notice</a>
+        <a class="footer-legal" [routerLink]="'/legal-notice'">Legal notice</a>
     </div>
 </footer>
