@@ -1,7 +1,26 @@
 {
-  "app": {
-    "hello": "hallo {{value}}",
-    "title": "Übersetzungs Demo",
-    "MySkills": "Meine Skills"
-  }
+    "app": {
+        "mySkills": "Meine Skills",
+        "aboutMe": "Über mich",
+        "letsTalk": "Projekt besprechen",
+        "skills-text-1": "Die passende Fähigkeit fehlt?",
+        "skills-text-2": "Immer bereit zu lernen!",
+        "contactMe": "Kontaktiere mich",
+        "scroll": "Scroll",
+        "down": "Runter",
+        "portfolio-text-1": "Entdecke hier eine Auswahl meiner Projekte – interagiere mit ihnen",
+        "portfolio-text-2": "und erlebe meine Fähigkeiten direkt in Aktion.",
+        "project": "Projekt",
+        "references": "Referenzen",
+        "references-text-1": "Ob selbstständig oder im Team – ich arbeite gerne gemeinsam an guten Lösungen.",
+        "references-text-2": " Hier erfährst du, was meine Kollegen über die Zusammenarbeit mit mir sagen.",
+        "sayHi": "Sag Hi!",
+        "discuss": "Du möchtest ein neues Projekt besprechen?",
+        "textMe": "Lass uns deine Idee zum Leben erwecken.",
+        "contact-text-1": "Ich habe die",
+        "contact-text-2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "privacyPolicy": "Datenschutzerklärung",
+        "sendMessage": "Nachricht senden",
+        "legalNotice": "Impressum"
+    }
 }

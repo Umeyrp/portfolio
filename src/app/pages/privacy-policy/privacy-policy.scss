@@ -6,6 +6,7 @@
     min-height: 100dvh;
 }
 
+
 main {
     display: flex;
     flex: 1;
@@ -19,9 +20,14 @@ h1 {
     width: fit-content;
     transition: color 100ms ease-in-out;
     @include font(syne, 800, 78px, 100%, 1%);
+
     &:hover {
         color: #00BC8F;
     }
+}
+
+:lang(de) h1 {
+    font-size: 3rem;
 }
 
 .wrapper {
@@ -34,6 +40,7 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
     & h2 {
         color: #00BC8F;
         @include font(overpass, 700, 33px, 120%, 0%);

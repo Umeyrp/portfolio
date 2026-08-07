@@ -1,9 +1,9 @@
-<section class="contact-section">
-    <h2>Say Hi!</h2>
+<section id="contact" class="contact-section">
+    <h2>{{"app.sayHi" |translate}}</h2>
     <div class="contact">
         <header class="contact-header">
-            <h3>Want to discuss a new project?</h3>
-            <p>Say hello! Let's discuss your ideas and make it happen.</p>
+            <h3>{{"app.discuss" |translate}}</h3>
+            <p>{{"app.textMe" |translate}}</p>
         </header>
         <form class="form">
             <input type="text" placeholder="Your name">
@@ -15,12 +15,18 @@
                     <span class="checkmark"></span>
                 </span>
                 <p>
-                    I've read the <a [routerLink]="'/privacy-policy'" data-text="privacy policy" class="privacy">privacy policy</a> and agree to
-                    the processing
-                    of my data as outlined.
+                    {{"app.contact-text-1" |translate}} <a [routerLink]="'/privacy-policy'" data-text="privacy policy"
+                        class="privacy">{{"app.privacyPolicy" |translate}}</a> {{"app.contact-text-2" |translate}}
                 </p>
             </label>
-            <button>Send message</button>
+            <button>{{"app.sendMessage" |translate}}</button>
         </form>
+    </div>
+    <div (click)="scrollToTop()" class="arrow-wrap">
+        <svg width="39" height="90" viewBox="0 0 39 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="chevron" d="M37.0898 16.6724L19.1636 2.54615L1.23742 16.6724" stroke="#FFFCF3"
+                stroke-width="4" />
+            <path class="stem" d="M19.1641 54.5898L19.1641 2.5459" stroke="#FFFCF3" stroke-width="4" />
+        </svg>
     </div>
 </section>

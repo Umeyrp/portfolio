@@ -21,4 +21,11 @@ export class Skills {
         'Python',
         'Laravel',
     ];
+
+    scrollToSection(id: string) {
+        document.getElementById(id)?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+    }
 }

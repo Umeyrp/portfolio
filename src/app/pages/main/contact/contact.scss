@@ -1,8 +1,10 @@
 @use 'mixins' as *;
 
 .contact-section {
+    position: relative;
     padding: 0 100px;
-    padding-bottom: 51px;
+    padding-top: 100px;
+    padding-bottom: 10px;
     background-color: black;
     color: #FFFCF3;
 
@@ -18,7 +20,7 @@
 }
 
 .contact-header {
-    margin-top: 58px;
+    margin-top: 40px;
     text-align: center;
 
     & h3 {
@@ -62,7 +64,7 @@
     }
 
     & textarea {
-        height: 200px;
+        height: 150px;
     }
 
     & button {
@@ -173,4 +175,40 @@
 
 input:checked+.checkmark::after {
     display: block;
+}
+
+.arrow-wrap {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 39px;
+    height: 78px;
+    cursor: pointer;
+
+    & svg {
+        height: 200%;
+    }
+}
+
+.stem {
+    transform: scaleY(1);
+    transform-box: fill-box;
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+}
+
+.chevron {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.arrow-wrap:hover .stem {
+    transform: scaleY(1.4);
+}
+
+.arrow-wrap:hover .chevron {
+    transform: translateY(-21.2px);
 }

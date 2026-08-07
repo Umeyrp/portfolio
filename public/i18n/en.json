@@ -1,7 +1,26 @@
 {
-  "app": {
-    "hello": "hello {{value}}",
-    "title": "Translation Demo",
-    "MySkills": "My Skills"
-  }
+    "app": {
+        "mySkills": "My skills",
+        "aboutMe": "About me",
+        "letsTalk": "Let's talk",
+        "skills-text-1": "Don't see the skill you need?",
+        "skills-text-2": "I'm always ready to learn!",
+        "contactMe": "Contact me",
+        "scroll": "Scroll",
+        "down": "Down",
+        "portfolio-text-1": "Explore a selection of my work here - Interact with",
+        "portfolio-text-2": "projects to see my skills in action.",
+        "project": "Project",
+        "references": "References",
+        "references-text-1": "I thrive both independently and as part of a team. Here’s",
+        "references-text-2": " what my colleagues have to say about working with me.",
+        "sayHi": "Say Hi!",
+        "discuss": "Want to discuss a new project?",
+        "textMe": "Say hello! Let's discuss your ideas and make it happen.",
+        "contact-text-1": "I've read the",
+        "contact-text-2": "and agree to the processing of my data as outlined.",
+        "privacyPolicy": "Privacy Policy",
+        "sendMessage": "Send message",
+        "legalNotice": "Legal notice"
+    }
 }

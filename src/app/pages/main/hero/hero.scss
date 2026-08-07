@@ -51,14 +51,18 @@ h1 {
     rotate: -90deg;
 }
 
-.hero-scroll {
+.scroll-indicator {
+    position: absolute;
+    right: 106px;
+    bottom: 70px;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 70px;
-    right: 106px;
     align-items: center;
     gap: 6px;
+    width: 53px;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
 
     & img {
         width: 50px;
@@ -67,8 +71,31 @@ h1 {
 
     & p {
         font-family: "overpass";
-        font-weight: 300;
         font-size: 1rem;
+        font-weight: 300;
         letter-spacing: -2.5%;
+    }
+}
+
+.arrow-wrap {
+    position: relative;
+    width: 53px;
+    height: 95px;
+    overflow: hidden;
+}
+
+.arrow {
+    position: absolute;
+    left: 0;
+    animation: arrowLoop 1.6s linear infinite;
+}
+
+@keyframes arrowLoop {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(150px);
     }
 }
