@@ -21,6 +21,13 @@
         "contact-text-2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
         "privacyPolicy": "Datenschutzerklärung",
         "sendMessage": "Nachricht senden",
-        "legalNotice": "Impressum"
+        "legalNotice": "Impressum",
+        "yourName": "Ihr Name",
+        "yourEmail": "Ihre E-Mail",
+        "yourMessage": "Ihre Nachricht",
+        "nameRequired": "Ihr Name wird benötigt",
+        "emailRequired": "Ihre E-Mail wird benötigt",
+        "messageRequired": "Ihre Nachricht wird benötigt",
+        "privacyRequired": "Bitte akzeptieren Sie die Datenschutzerklärung."
     }
 }

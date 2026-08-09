@@ -21,6 +21,13 @@
         "contact-text-2": "and agree to the processing of my data as outlined.",
         "privacyPolicy": "Privacy Policy",
         "sendMessage": "Send message",
-        "legalNotice": "Legal notice"
+        "legalNotice": "Legal notice",
+        "yourName": "Your name",
+        "yourEmail": "Your email",
+        "yourMessage": "Your message",
+        "nameRequired": "Your name is required",
+        "emailRequired": "Your email is required",
+        "messageRequired": "Your message is required",
+        "privacyRequired": "Please accept the privacy policy."
     }
 }

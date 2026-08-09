@@ -5,21 +5,80 @@
             <h3>{{"app.discuss" |translate}}</h3>
             <p>{{"app.textMe" |translate}}</p>
         </header>
-        <form class="form">
-            <input type="text" placeholder="Your name">
-            <input type="text" placeholder="Your email">
-            <textarea name="message" placeholder="Your message" id=""></textarea>
+
+        <form class="form" novalidate (submit)="onSubmit($event)">
+
+            <div class="input-group" [class.touched]="contactForm.name().touched()"
+                [class.invalid]="contactForm.name().invalid() && contactForm.name().touched()"
+                [class.valid]="contactForm.name().valid() && contactForm.name().touched()">
+                <label for="name">{{"app.yourName" |translate}}</label>
+                <input id="name" type="text" [formField]="contactForm.name" [placeholder]="'app.yourName' |translate">
+                @if (contactForm.name().invalid() && contactForm.name().touched()) {
+                <span class="status-icon error-icon">!</span>
+                } @else if (contactForm.name().valid() && contactForm.name().touched()) {
+                <span class="status-icon success-icon">✓</span>
+                }
+            </div>
+            @if (contactForm.name().invalid() && contactForm.name().touched()) {
+            @for (error of contactForm.name().errors(); track error.kind) {
+            <p class="error-text">{{error.message! |translate}}</p>
+            }
+            }
+
+            <div class="input-group" [class.touched]="contactForm.email().touched()"
+                [class.invalid]="contactForm.email().invalid() && contactForm.email().touched()"
+                [class.valid]="contactForm.email().valid() && contactForm.email().touched()">
+                <label for="email">{{"app.yourEmail" |translate}}</label>
+                <input id="email" type="email" [formField]="contactForm.email"
+                    [placeholder]="'app.yourEmail' |translate">
+                @if (contactForm.email().invalid() && contactForm.email().touched()) {
+                <span class="status-icon error-icon">!</span>
+                } @else if (contactForm.email().valid() && contactForm.email().touched()) {
+                <span class="status-icon success-icon">✓</span>
+                }
+            </div>
+            @if (contactForm.email().invalid() && contactForm.email().touched()) {
+            @for (error of contactForm.email().errors(); track error.kind) {
+            <p class="error-text">{{error.message! |translate}}</p>
+            }
+            }
+
+            <div class="input-group" [class.touched]="contactForm.message().touched()"
+                [class.invalid]="contactForm.message().invalid() && contactForm.message().touched()"
+                [class.valid]="contactForm.message().valid() && contactForm.message().touched()">
+                <label for="message">{{"app.yourMessage" |translate}}</label>
+                <textarea id="message" [formField]="contactForm.message"
+                    [placeholder]="'app.yourMessage' |translate"></textarea>
+                @if (contactForm.message().invalid() && contactForm.message().touched()) {
+                <span class="status-icon error-icon">!</span>
+                } @else if (contactForm.message().valid() && contactForm.message().touched()) {
+                <span class="status-icon success-icon">✓</span>
+                }
+            </div>
+            @if (contactForm.message().invalid() && contactForm.message().touched()) {
+            @for (error of contactForm.message().errors(); track error.kind) {
+            <p class="error-text">{{error.message! |translate}}</p>
+            }
+            }
+
             <label class="checkbox">
                 <span class="checkbox-visual">
-                    <input type="checkbox">
+                    <input type="checkbox" [formField]="contactForm.privacyAccepted">
                     <span class="checkmark"></span>
                 </span>
                 <p>
-                    {{"app.contact-text-1" |translate}} <a [routerLink]="'/privacy-policy'" data-text-1="Datenschutzerklärung" data-text-2="Privacy Policy"
+                    {{"app.contact-text-1" |translate}} <a [routerLink]="'/privacy-policy'"
+                        data-text-1="Datenschutzerklärung" data-text-2="Privacy Policy"
                         class="privacy">{{"app.privacyPolicy" |translate}}</a> {{"app.contact-text-2" |translate}}
                 </p>
             </label>
-            <button>{{"app.sendMessage" |translate}}</button>
+            @if (contactForm.privacyAccepted().invalid() && contactForm.privacyAccepted().touched()) {
+            @for (error of contactForm.privacyAccepted().errors(); track error.kind) {
+            <p class="error-text">{{error.message! |translate}}</p>
+            }
+            }
+
+            <button type="submit" [class.disabled]="contactForm().invalid()">{{"app.sendMessage" |translate}}</button>
         </form>
     </div>
     <div (click)="scrollToTop()" class="arrow-wrap">
