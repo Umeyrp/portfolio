@@ -111,13 +111,22 @@
     cursor: pointer;
 }
 
-.privacy::before {
+.privacy:lang(en)::before {
     display: block;
     height: 0;
     overflow: hidden;
     visibility: hidden;
     font-weight: 700;
-    content: attr(data-text);
+    content: attr(data-text-2);
+}
+
+.privacy:lang(de)::before {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    font-weight: 700;
+    content: attr(data-text-1);
 }
 
 .checkbox input {

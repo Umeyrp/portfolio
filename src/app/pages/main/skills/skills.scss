@@ -81,16 +81,25 @@ span {
     transition: all 100ms ease-in-out;
     cursor: pointer;
 
-    &::before {
+    &:lang(en)::before {
         display: block;
         height: 0;
         overflow: hidden;
         visibility: hidden;
         font-weight: 700;
-        content: attr(data-text);
+        content: attr(data-text-2);
     }
 
-    &::after {
+    &:lang(de)::before {
+        display: block;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        font-weight: 700;
+        content: attr(data-text-1);
+    }
+
+    &:lang(en)::after {
         position: absolute;
         bottom: -2px;
         left: 70px;
@@ -99,9 +108,24 @@ span {
         background-color: currentColor;
         visibility: hidden;
         content: "";
-        transform: translateX(-20%);
+        transform: translateX(-50%);
         transition: transform 100ms ease-in;
     }
+
+
+    &:lang(de)::after {
+        position: absolute;
+        bottom: -2px;
+        left: 70px;
+        width: 60%;
+        height: 2px;
+        background-color: currentColor;
+        visibility: hidden;
+        content: "";
+        transform: translateX(-50%);
+        transition: transform 100ms ease-in;
+    }
+
 
     &:hover {
         font-weight: 700;
