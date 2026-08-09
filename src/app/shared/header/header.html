@@ -22,11 +22,30 @@
             </div>
             }
 
-            <svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 2H42" stroke="black" stroke-width="4" stroke-linecap="square" />
-                <path d="M2 19H42" stroke="black" stroke-width="4" stroke-linecap="square" />
-                <path d="M2 36H42" stroke="black" stroke-width="4" stroke-linecap="square" />
-            </svg>
+            <button class="burger-btn" (click)="toggleMenu()" [class.open]="isMenuOpen()">
+                <svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="line line-top" d="M2 2H42" stroke="black" stroke-width="4" stroke-linecap="square" />
+                    <path class="line line-middle" d="M2 19H42" stroke="black" stroke-width="4"
+                        stroke-linecap="square" />
+                    <path class="line line-bottom" d="M2 36H42" stroke="black" stroke-width="4"
+                        stroke-linecap="square" />
+                </svg>
+            </button>
         </div>
     </div>
 </header>
+
+@if (isMenuOpen()) {
+<div class="menu-overlay">
+    <button (click)="scrollToSection('aboutMe')">{{"app.aboutMe" |translate}}</button>
+    <button (click)="scrollToSection('skills')">{{"app.mySkills" |translate}}</button>
+    <button (click)="scrollToSection('portfolio')">Portfolio</button>
+    <div class="menu-footer">
+        <div class="menu-footer-text">
+            <h2>{{"app.sayHi" |translate}}</h2>
+            <p>mu.kemiksiz@gmail.com</p>
+        </div>
+        <img src="/images/rectangle.png" alt="">
+    </div>
+</div>
+}

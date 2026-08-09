@@ -47,15 +47,130 @@ header {
 
         &:not(.current):not(:active):hover {
             &::after {
-                content: "";
                 position: absolute;
-                bottom: 0;
                 right: 0;
+                bottom: 0;
                 width: 50%;
                 height: 2px;
                 background-color: black;
+                content: "";
             }
         }
 
+    }
+}
+
+.burger-btn {
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.line {
+    transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.burger-btn.open {
+    .line-top {
+        transform: translateY(17px) rotate(45deg);
+    }
+
+    .line-middle {
+        opacity: 0;
+    }
+
+    .line-bottom {
+        transform: translateY(-17px) rotate(-45deg);
+    }
+}
+
+.menu-overlay {
+    position: fixed;
+    z-index: 20; // über dem Header (der hat z-index: 10)
+    top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    height: 100dvh;
+    padding-top: 100px;
+    background-color: #FFFCF3;
+    animation: fadeIn 200ms ease-in-out;
+
+    & button {
+        padding: 20px 60px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        @include font(syne, 700, 32px, 120%, 0%);
+
+        &:hover {
+            color: #00BC8F;
+            border-color: #00BC8F;
+        }
+    }
+}
+
+.menu-overlay button {
+    position: relative; // Bezugspunkt für die Ecke
+    width: 40%;
+    padding: 20px 60px;
+    padding-left: 40px; // etwas Platz für die Ecke schaffen
+
+    &::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 12px;
+        height: 20px;
+        content: "";
+        border-left: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.menu-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+
+    & img {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+    }
+
+    & .menu-footer-text {
+        position: relative;
+        z-index: 20;
+        padding: 42px 36px;
+
+        & h2 {
+            color: #FFFCF3;
+            @include font(syne, 800, 38px, 100%, 1%);
+        }
+
+        & p {
+            padding-top: 20px;
+            color: #FFFCF3;
+            @include font(overpass, 400, 20px, 100%, 1%);
+        }
     }
 }

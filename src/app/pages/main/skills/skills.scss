@@ -2,6 +2,7 @@
 
 .skills-section {
     padding: 0 100px;
+    scroll-margin-top: 150px;
 }
 
 .skills-wrapper {
@@ -12,13 +13,13 @@
     & h2 {
         @include font("syne", 800, 78px, 100%, 1%);
         position: absolute;
-        top: -9%;
+        top: 0;
         left: 50%;
         padding: 10px;
         background-color: #FFFCF3;
         white-space: nowrap;
         transition: color 100ms ease-in-out;
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
 
         &:hover {
             color: #00BC8F;
