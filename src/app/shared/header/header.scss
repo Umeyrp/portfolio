@@ -2,7 +2,7 @@
 
 header {
     position: fixed;
-    z-index: 10;
+    z-index: 100;
     top: 0;
     width: 100%;
     padding: 0 100px;
@@ -89,7 +89,7 @@ header {
 
 .menu-overlay {
     position: fixed;
-    z-index: 20; // über dem Header (der hat z-index: 10)
+    z-index: 200;
     top: 64px;
     display: flex;
     flex-direction: column;
@@ -116,10 +116,10 @@ header {
 }
 
 .menu-overlay button {
-    position: relative; // Bezugspunkt für die Ecke
+    position: relative;
     width: 40%;
     padding: 20px 60px;
-    padding-left: 40px; // etwas Platz für die Ecke schaffen
+    padding-left: 40px;
 
     &::before {
         position: absolute;
