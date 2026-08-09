@@ -28,6 +28,7 @@
         "nameRequired": "Your name is required",
         "emailRequired": "Your email is required",
         "messageRequired": "Your message is required",
-        "privacyRequired": "Please accept the privacy policy."
+        "privacyRequired": "Please accept the privacy policy.",
+        "validEmail": "Please enter a valid E-mail"
     }
 }

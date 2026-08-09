@@ -27,7 +27,7 @@ export class Contact {
     protected contactForm = form(this.contactModel, (schemaPath) => {
         required(schemaPath.name, { message: 'app.nameRequired' });
         required(schemaPath.email, { message: 'app.emailRequired' });
-        email(schemaPath.email, { message: 'app.emailRequired' });
+        email(schemaPath.email, { message: 'app.validEmail' });
         required(schemaPath.message, { message: 'app.messageRequired' });
         required(schemaPath.privacyAccepted, { message: 'app.privacyRequired' });
     });

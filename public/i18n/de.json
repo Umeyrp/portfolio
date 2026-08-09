@@ -28,6 +28,7 @@
         "nameRequired": "Ihr Name wird benötigt",
         "emailRequired": "Ihre E-Mail wird benötigt",
         "messageRequired": "Ihre Nachricht wird benötigt",
-        "privacyRequired": "Bitte akzeptieren Sie die Datenschutzerklärung."
+        "privacyRequired": "Bitte akzeptieren Sie die Datenschutzerklärung.",
+        "validEmail": "Bitte schreibe eine gültige E-mail"
     }
 }
