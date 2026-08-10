@@ -1,7 +1,8 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { form, FormField, required, email, submit } from '@angular/forms/signals';
+import { ContactService } from '../../../services/contact-service';
 
 interface ContactData {
     name: string;
@@ -17,6 +18,8 @@ interface ContactData {
     styleUrl: './contact.scss',
 })
 export class Contact {
+    private contactService = inject(ContactService);
+
     protected contactModel = signal<ContactData>({
         name: '',
         email: '',
@@ -32,6 +35,8 @@ export class Contact {
         required(schemaPath.privacyAccepted, { message: 'app.privacyRequired' });
     });
 
+    protected submitStatus = signal<'idle' | 'sending' | 'success' | 'error'>('idle');
+
     scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -40,8 +45,25 @@ export class Contact {
         event.preventDefault();
         submit(this.contactForm, {
             action: async () => {
-                console.log('Sending:', this.contactModel());
-                // TODO: HTTP-Aufruf
+                this.submitStatus.set('sending');
+                try {
+                    const { name, email, message } = this.contactModel();
+                    const response = await this.contactService.send({ name, email, message });
+
+                    if (response.success) {
+                        this.submitStatus.set('success');
+                        this.contactModel.set({
+                            name: '',
+                            email: '',
+                            message: '',
+                            privacyAccepted: false,
+                        });
+                    } else {
+                        this.submitStatus.set('error');
+                    }
+                } catch {
+                    this.submitStatus.set('error');
+                }
             },
         });
     }

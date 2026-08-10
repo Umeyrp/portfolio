@@ -144,13 +144,13 @@ header {
 }
 
 .menu-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: absolute;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 30%;
+    height: 43%;
 
     & img {
         position: absolute;
@@ -167,7 +167,7 @@ header {
 
         & h2 {
             color: #FFFCF3;
-            @include font(syne, 800, 38px, 100%, 1%);
+            @include font(syne, 800, 58px, 100%, 1%);
         }
 
         & p {
@@ -176,14 +176,24 @@ header {
             @include font(overpass, 400, 20px, 100%, 1%);
         }
     }
+
+    &::before {
+        position: absolute;
+        z-index: -10;
+        background-color: black;
+        inset: 0;
+        content: "";
+        clip-path: polygon(0 0, 100% 36%, 100% 100%, 0 100%)
+    }
 }
 
 .footer-socials {
-    margin-right: 100px;
     z-index: 20;
     display: flex;
     align-items: center;
     gap: 42px;
+    margin-top: 113px;
+    margin-right: 100px;
 
     .social-link {
         display: inline-block;

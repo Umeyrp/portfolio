@@ -3,11 +3,10 @@
 .contact-section {
     position: relative;
     padding: 0 100px;
-    padding-top: 100px;
+    padding-top: 166px;
     padding-bottom: 10px;
-    background-color: black;
     color: #FFFCF3;
-    scroll-margin-top: 80px;
+    scroll-margin-top: -33px;
 
     &>h2 {
         width: fit-content;
@@ -17,6 +16,15 @@
         &:hover {
             color: #00BC8F;
         }
+    }
+
+    &::before {
+    position: absolute;
+    z-index: 0;
+    inset: -1px 0 -1px 0;
+    background-color: black;
+    content: "";
+    clip-path: polygon(0 0, 100% 14%, 100% 100%, 0 100%);
     }
 }
 
@@ -99,24 +107,19 @@
             resize: none;
         }
 
-        &:hover input,
-        &:hover textarea {
-            border: 2px solid #FFFCF3;
-        }
 
+        &:hover input,
+        &:hover textarea,
         &:focus-within input,
-        &:focus-within textarea {
+        &:focus-within textarea,
+        &.touched input,
+        &.touched textarea {
             border: 2px solid #FFFCF3;
         }
 
         &:focus-within label,
         &.touched label {
             opacity: 1;
-        }
-
-        &.touched input,
-        &.touched textarea {
-            border: 2px solid #FFFCF3;
         }
 
         &.invalid input,
