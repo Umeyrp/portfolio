@@ -36,10 +36,11 @@
 }
 
 .form {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     margin-top: 22px;
 
     .input-group {
@@ -53,12 +54,13 @@
             left: 21px;
             padding: 0 6px;
             background-color: black;
-            color: #FFFCF3;
             opacity: 0;
+            color: #FFFCF3;
             pointer-events: none;
             transition: opacity 100ms ease-in-out;
             @include font(overpass, 400, 13px, 120%, 0%);
         }
+
 
         input,
         textarea {
@@ -66,10 +68,21 @@
             padding: 15px 25px;
             background-color: black;
             border: 2px solid transparent;
-            border-bottom: 2px solid #FFFCF3;
             color: #FFFCF3;
+            border-bottom: 2px solid #FFFCF3;
             transition: border-color 100ms ease-in-out;
             @include font(overpass, 400, 16px, 120%, 0%);
+
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover,
+            &:-webkit-autofill:focus,
+            &:-webkit-autofill:active {
+                -webkit-box-shadow: 0 0 0 1000px black inset;
+                box-shadow: 0 0 0 1000px black inset;
+                -webkit-text-fill-color: #FFFCF3;
+                transition: background-color 600000s 0s, color 600000s 0s;
+                caret-color: #FFFCF3;
+            }
 
             &:focus {
                 outline: none;
@@ -140,11 +153,28 @@
     }
 
     .error-text {
-        align-self: center;
+        position: absolute;
         width: 600px;
         margin-top: -10px;
         color: #FF5C5C;
+        align-self: center;
         @include font(overpass, 400, 13px, 120%, 0%);
+
+        &.name {
+            top: 65px;
+        }
+
+        &.email {
+            top: 148px;
+        }
+
+        &.message {
+            top: 328px;
+        }
+
+        &.privacy {
+            top: 33px;
+        }
     }
 
     & button {
@@ -163,8 +193,8 @@
 
         &:not(.disabled) {
             opacity: 1;
-            border-color: #FFFCF3;
             color: #FFFCF3;
+            border-color: #FFFCF3;
             cursor: pointer;
         }
     }
@@ -185,6 +215,10 @@
         & .privacy {
             font-weight: 700;
         }
+    }
+
+    &.privacy-label {
+        position: relative;
     }
 }
 

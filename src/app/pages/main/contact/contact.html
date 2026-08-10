@@ -21,7 +21,7 @@
             </div>
             @if (contactForm.name().invalid() && contactForm.name().touched()) {
             @for (error of contactForm.name().errors(); track error.kind) {
-            <p class="error-text">{{error.message! |translate}}</p>
+            <p class="error-text name">{{error.message! |translate}}</p>
             }
             }
 
@@ -39,7 +39,7 @@
             </div>
             @if (contactForm.email().invalid() && contactForm.email().touched()) {
             @for (error of contactForm.email().errors(); track error.kind) {
-            <p class="error-text">{{error.message! |translate}}</p>
+            <p class="error-text email">{{error.message! |translate}}</p>
             }
             }
 
@@ -57,11 +57,11 @@
             </div>
             @if (contactForm.message().invalid() && contactForm.message().touched()) {
             @for (error of contactForm.message().errors(); track error.kind) {
-            <p class="error-text">{{error.message! |translate}}</p>
+            <p class="error-text message">{{error.message! |translate}}</p>
             }
             }
 
-            <label class="checkbox">
+            <label class="checkbox privacy-label">
                 <span class="checkbox-visual">
                     <input type="checkbox" [formField]="contactForm.privacyAccepted">
                     <span class="checkmark"></span>
@@ -71,12 +71,13 @@
                         data-text-1="Datenschutzerklärung" data-text-2="Privacy Policy"
                         class="privacy">{{"app.privacyPolicy" |translate}}</a> {{"app.contact-text-2" |translate}}
                 </p>
-            </label>
-            @if (contactForm.privacyAccepted().invalid() && contactForm.privacyAccepted().touched()) {
+                            @if (contactForm.privacyAccepted().invalid() && contactForm.privacyAccepted().touched()) {
             @for (error of contactForm.privacyAccepted().errors(); track error.kind) {
-            <p class="error-text">{{error.message! |translate}}</p>
+            <p class="error-text privacy">{{error.message! |translate}}</p>
             }
             }
+            </label>
+
 
             <button type="submit" [class.disabled]="contactForm().invalid()">{{"app.sendMessage" |translate}}</button>
         </form>
