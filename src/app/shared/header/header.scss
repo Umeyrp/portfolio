@@ -8,6 +8,10 @@ header {
     padding: 0 100px;
     background-color: #FFFCF3;
 
+    @include mobile {
+        padding: 0;
+    }
+
     & svg {
         height: 30px;
     }
@@ -28,6 +32,22 @@ header {
 .language {
     display: flex;
     gap: 8px;
+
+    &.mobile {
+        display: none;
+    }
+
+    @include mobile {
+        &.desktop {
+            display: none;
+        }
+    }
+
+    @include mobile {
+        &.mobile {
+            display: block;
+        }
+    }
 
     & button {
         position: relative;
@@ -97,12 +117,12 @@ header {
     gap: 24px;
     width: 100%;
     height: 100dvh;
-    padding-top: 100px;
+    padding-top: 50px;
     background-color: #FFFCF3;
     animation: fadeIn 200ms ease-in-out;
 
     & button {
-        padding: 20px 60px;
+        padding: 20px 0;
         background: none;
         border: none;
         cursor: pointer;
@@ -117,9 +137,7 @@ header {
 
 .menu-overlay button {
     position: relative;
-    width: 40%;
-    padding: 20px 60px;
-    padding-left: 40px;
+    width: 250px;
 
     &::before {
         position: absolute;
@@ -147,10 +165,15 @@ header {
     position: absolute;
     bottom: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     width: 100%;
     height: 43%;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        gap: 37px;
+    }
 
     & img {
         position: absolute;
@@ -163,11 +186,21 @@ header {
     & .menu-footer-text {
         position: relative;
         z-index: 20;
-        padding: 42px 36px;
+        padding-top: 72px;
+        padding-left: 100px;
+
+        @include mobile {
+            padding-left: 0px;
+            text-align: center;
+        }
 
         & h2 {
             color: #FFFCF3;
             @include font(syne, 800, 58px, 100%, 1%);
+
+            @include mobile {
+                font-size: 2rem;
+            }
         }
 
         & p {
@@ -183,17 +216,31 @@ header {
         background-color: black;
         inset: 0;
         content: "";
-        clip-path: polygon(0 0, 100% 36%, 100% 100%, 0 100%)
+        clip-path: polygon(0 0, 100% 28%, 100% 100%, 0 100%);
+
+        @include mobile {
+            clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+        }
     }
 }
 
-.footer-socials {
+.menu-footer-socials {
     z-index: 20;
     display: flex;
+    justify-content: end;
     align-items: center;
     gap: 42px;
-    margin-top: 113px;
-    margin-right: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+
+    @include mobile {
+        padding-right: 0;
+        padding-bottom: 0;
+
+        & svg {
+            height: 30px;
+        }
+    }
 
     .social-link {
         display: inline-block;

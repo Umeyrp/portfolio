@@ -7,7 +7,6 @@
         </header>
 
         <form class="form" novalidate (submit)="onSubmit($event)">
-
             <div class="input-group" [class.touched]="contactForm.name().touched()"
                 [class.invalid]="contactForm.name().invalid() && contactForm.name().touched()"
                 [class.valid]="contactForm.name().valid() && contactForm.name().touched()">

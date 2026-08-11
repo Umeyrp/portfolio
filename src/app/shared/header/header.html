@@ -24,9 +24,21 @@
                 <path d="M61.7893 25.3333H68.1168V4.66667H61.7893V0H74.1962V30H61.7893V25.3333Z" fill="black" />
             </svg>
         </a>
+
+        @if (isMenuOpen()) {
+        @if(showLanguageButtons()){
+        <div class="language mobile">
+            <button (click)="switchLanguage('en')"
+                [class.current]="languageService.currentLanguage() === 'en'">EN</button>
+            <button (click)="switchLanguage('de')"
+                [class.current]="languageService.currentLanguage() === 'de'">DE</button>
+        </div>
+        }
+        }
+
         <div class="menu">
             @if(showLanguageButtons()){
-            <div class="language">
+            <div class="language desktop">
                 <button (click)="switchLanguage('en')"
                     [class.current]="languageService.currentLanguage() === 'en'">EN</button>
                 <button (click)="switchLanguage('de')"
@@ -58,7 +70,7 @@
             <p>mu.kemiksiz@gmail.com</p>
         </div>
 
-        <nav class="footer-socials">
+        <nav class="menu-footer-socials">
             <a href="https://github.com/Umeyrp" target="_blank" class="social-link">
                 <span class="social-icon">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
