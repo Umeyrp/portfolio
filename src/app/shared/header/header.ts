@@ -41,11 +41,20 @@ export class Header {
     }
 
     private scrollToSection(id: string) {
-        setTimeout(() => {
-            document.getElementById(id)?.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                document.getElementById(id)?.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                });
+
+                setTimeout(() => {
+                    document.getElementById(id)?.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    });
+                }, 400);
             });
-        }, 50);
+        });
     }
 }
