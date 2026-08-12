@@ -3,6 +3,10 @@
 .skills-section {
     padding: 0 100px;
     scroll-margin-top: 150px;
+
+    @include mobile {
+        padding: 0 25px;
+    }
 }
 
 .skills-wrapper {
@@ -21,6 +25,14 @@
         transition: color 100ms ease-in-out;
         transform: translate(-50%, -50%);
 
+        @include mobile {
+            font-size: clamp(1.4rem, 2vw + 1rem, 36px);
+        }
+
+        @include tablet {
+            font-size: 46px;
+        }
+
         &:hover {
             color: #00BC8F;
         }
@@ -32,12 +44,25 @@
     flex-wrap: wrap;
     gap: 78px 128px;
     margin: 0 114px;
-    margin-top: 120px
+    margin-top: 120px;
+
+    @include mobile {
+        gap: 25px;
+        margin: 0;
+        margin-top: 90px
+    }
+
+    @include tablet {
+        gap: 50px;
+        margin: 0;
+        margin-top: 90px
+    }
 }
 
 .skills-item {
     @include flex(column, center, center);
     gap: 10px;
+    width: 80px;
     transition: all 100ms ease-in-out;
 
     & img {
@@ -61,14 +86,33 @@
     margin-top: 48px;
     margin-bottom: 120px;
 
+    @include mobile {
+        gap: 8px;
+        padding: 0 10px;
+    }
+
+    @include tablet {
+        gap: 8px;
+        padding: 0 10px;
+    }
+
     & img {
         width: 75px;
         height: 75px;
+
+        @include mobile {
+            width: 60px;
+            height: 60px;
+        }
     }
 
     & p {
         @include font("overpass", 400, 22px, 120%, 0%);
         align-self: end;
+
+        @include mobile {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -80,6 +124,14 @@ span {
     color: #00BC8F;
     transition: all 100ms ease-in-out;
     cursor: pointer;
+
+    @include mobile {
+        padding: 5px 0;
+    }
+
+    @include tablet {
+        padding: 5px 0;
+    }
 
     &:lang(en)::before {
         display: block;
@@ -110,8 +162,17 @@ span {
         content: "";
         transform: translateX(-50%);
         transition: transform 100ms ease-in;
-    }
 
+        @include mobile {
+            bottom: 0px;
+            left: 53px;
+            width: 40%;
+        }
+
+        @include tablet {
+            bottom: 5px;
+        }
+    }
 
     &:lang(de)::after {
         position: absolute;
@@ -124,6 +185,16 @@ span {
         content: "";
         transform: translateX(-50%);
         transition: transform 100ms ease-in;
+
+        @include mobile {
+            bottom: 0px;
+            left: 75px;
+            width: 40%;
+        }
+
+        @include tablet {
+            bottom: 5px;
+        }
     }
 
 

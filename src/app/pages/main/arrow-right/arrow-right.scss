@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 .arrow-right-section {
     display: flex;
     justify-content: end;
@@ -11,5 +13,25 @@
         height: 215px;
         margin-right: 50px;
         rotate: 45deg;
+
+        @include mobile {
+            margin-right: 0;
+        }
+
+        @include tablet {
+            margin-right: 0;
+        }
+    }
+
+    @include mobile {
+        justify-content: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    @include tablet {
+        justify-content: end;
+        margin-right: 0;
+        margin-left: 0;
     }
 }
