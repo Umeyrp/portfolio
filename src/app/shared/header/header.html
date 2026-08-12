@@ -61,9 +61,9 @@
 
 @if (isMenuOpen()) {
 <div class="menu-overlay">
-    <button (click)="scrollToSection('aboutMe')">{{"app.aboutMe" |translate}}</button>
-    <button (click)="scrollToSection('skills')">{{"app.mySkills" |translate}}</button>
-    <button (click)="scrollToSection('portfolio')">Portfolio</button>
+    <button (click)="goToSection('aboutMe')">{{"app.aboutMe" |translate}}</button>
+    <button (click)="goToSection('skills')">{{"app.mySkills" |translate}}</button>
+    <button (click)="goToSection('portfolio')">Portfolio</button>
     <div class="menu-footer">
         <div class="menu-footer-text">
             <h2>{{"app.sayHi" |translate}}</h2>

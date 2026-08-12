@@ -11,6 +11,12 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+        align-items: center;
+        gap: 28px;
+        flex-direction: column-reverse;
+    }
 }
 
 .footer-legal {
@@ -46,6 +52,10 @@
             transform: translateX(0);
         }
     }
+
+    @include mobile {
+        right: unset;
+    }
 }
 
 .footer-socials {
@@ -67,11 +77,26 @@
     }
 }
 
+.footer-copyright {
+    @include mobile {
+        display: none;
+    }
+}
+
+.footer-email {
+    display: none;
+    margin-bottom: 10px;
+
+    @include mobile {
+        display: block;
+    }
+}
+
 .footer-branding {
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 17px;
+    gap: 30px;
 
     & svg {
         height: 30px;
@@ -79,5 +104,13 @@
 
     & p {
         @include font(overpass, 400, 22px, 120%, 0%);
+    }
+
+    @include mobile {
+        .footer-email {
+            font-size: 19px;
+        }
+
+        align-items: center;
     }
 }

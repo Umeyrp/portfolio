@@ -8,27 +8,87 @@
 
 
 main {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    padding: 0px 200px;
+
+    @include mobile {
+        margin-top: 95px;
+        margin-bottom: 50px;
+        padding: 0 25px;
+    }
+
+    @include tablet {
+        margin-top: 95px;
+        margin-bottom: 50px;
+        padding: 0 50px;
+    }
+}
+
+.main-content {
     display: flex;
     flex: 1;
     flex-direction: column;
     gap: 64px;
-    margin-top: 150px;
-    padding: 0px 200px;
+}
+
+.home-button {
+    display: none;
+    justify-content: end;
+    margin-right: 7px;
+    margin-bottom: 20px;
+
+    & svg {
+        width: 35px;
+        height: 50px;
+    }
+
+    @include mobile {
+        display: flex;
+    }
+
+    @include tablet {
+        display: flex;
+    }
 }
 
 h1 {
     width: fit-content;
     transition: color 100ms ease-in-out;
+    hyphens: manual;
     @include font(syne, 800, 78px, 100%, 1%);
+
+    @include mobile {
+        font-size: 24px;
+    }
+
+    @include tablet {
+        font-size: 48px;
+
+        &:lang(de) {
+            font-size: 33px;
+        }
+    }
+
+    @include laptop {
+        font-size: 48px;
+
+        &:lang(de) {
+            font-size: 31px;
+        }
+    }
+
+    @include wide {
+        &:lang(de) {
+            font-size: 52px;
+        }
+    }
 
     &:hover {
         color: #00BC8F;
     }
 }
 
-:lang(de) h1 {
-    font-size: 3rem;
-}
 
 .wrapper {
     display: flex;
@@ -44,6 +104,11 @@ h1 {
     & h2 {
         color: #00BC8F;
         @include font(overpass, 700, 33px, 120%, 0%);
+
+
+        @include mobile {
+            font-size: 23px;
+        }
     }
 
     & p {

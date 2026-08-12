@@ -8,10 +8,19 @@
     color: #FFFCF3;
     scroll-margin-top: -33px;
 
+    @include mobile {
+        padding: 0 25px;
+        padding-top: 90px;
+    }
+
     &>h2 {
         width: fit-content;
         transition: all 100ms ease-in-out;
         @include font(syne, 800, 78px, 100%, 0%);
+
+        @include mobile {
+            font-size: 37px;
+        }
 
         &:hover {
             color: #00BC8F;
@@ -19,12 +28,16 @@
     }
 
     &::before {
-    position: absolute;
-    z-index: 0;
-    inset: -1px 0 -1px 0;
-    background-color: black;
-    content: "";
-    clip-path: polygon(0 0, 100% 14%, 100% 100%, 0 100%);
+        position: absolute;
+        z-index: -10;
+        background-color: black;
+        inset: -1px 0 -1px 0;
+        content: "";
+        clip-path: polygon(0 0, 100% 14%, 100% 100%, 0 100%);
+
+        @include mobile {
+            clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+        }
     }
 }
 
@@ -35,11 +48,19 @@
     & h3 {
         @include font(overpass, 700, 32px, 120%, 0%);
         color: #00BC8F;
+
+        @include mobile {
+            font-size: 30px;
+        }
     }
 
     &>p {
         margin-top: 18px;
         @include font(overpass, 400, 22px, 120%, 0%);
+
+        @include mobile {
+            font-size: 19px;
+        }
     }
 }
 
@@ -54,6 +75,10 @@
     .input-group {
         position: relative;
         width: 600px;
+
+        @include mobile {
+            width: 100%;
+        }
 
         label {
             position: absolute;
@@ -177,6 +202,14 @@
 
         &.privacy {
             top: 33px;
+
+            @include mobile {
+                top: calc(100% + 16px);
+            }
+        }
+
+        @include mobile {
+            width: 100%;
         }
     }
 
@@ -199,6 +232,11 @@
             color: #FFFCF3;
             border-color: #FFFCF3;
             cursor: pointer;
+        }
+
+        @include mobile{
+            font-size: 21px;
+            padding: 20px 40px;
         }
     }
 }
@@ -324,6 +362,10 @@ input:checked+.checkmark::after {
 
     & svg {
         height: 200%;
+    }
+
+    @include mobile{
+        display: none;
     }
 }
 
