@@ -25,13 +25,13 @@
 }
 
 h2 {
+    margin-bottom: 48px;
     font-family: "syne";
     font-size: 78px;
     font-weight: 800;
     letter-spacing: 1%;
     white-space: nowrap;
     transition: all 100ms ease-in-out;
-    margin-bottom: 48px;
 
     @include mobile {
         font-size: 32px;
@@ -129,14 +129,11 @@ h2 {
 .about-me-right {
     position: relative;
     width: 50%;
-    height: 100%;
     max-width: 533px;
-    max-height: 533px;
+    height: 100%;
 
     @include mobile {
-        width: 100%;
         min-width: 260px;
-        max-width: 350px;
     }
 
     &:hover::after {
