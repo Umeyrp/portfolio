@@ -5,6 +5,7 @@
         "letsTalk": "Projekt besprechen",
         "skills-text-1": "Die passende Fähigkeit fehlt?",
         "skills-text-2": "Immer bereit zu lernen!",
+        "contact": "Kontakt",
         "contactMe": "Kontaktiere mich",
         "scroll": "Scroll",
         "down": "Runter",
@@ -31,6 +32,8 @@
         "validEmail": "Bitte schreibe eine gültige E-mail",
         "sending": "wird gesendet..",
         "remote": "Offen für Remote-Arbeit",
-        "based": "Ansässig in"
+        "based": "Ansässig in",
+        "messageSent": "Nachricht erfolgreich gesendet!",
+        "messageError": "Senden fehlgeschlagen!"
     }
 }

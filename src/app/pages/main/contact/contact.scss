@@ -1,5 +1,9 @@
 @use 'mixins' as *;
 
+.contact-section {
+    scroll-margin-top: -70px;
+}
+
 .wrapper {
     position: relative;
     padding: 0 100px;
@@ -235,8 +239,8 @@
         }
 
         @include mobile {
-            font-size: 21px;
             padding: 20px 40px;
+            font-size: 21px;
         }
     }
 }
@@ -387,4 +391,19 @@ input:checked+.checkmark::after {
 
 .arrow-wrap:hover .chevron {
     transform: translateY(-21.2px);
+}
+
+.form-status {
+    margin-top: 20px;
+    text-align: center;
+    @include font(overpass, 700, 1rem, 120%, 0%);
+
+    & .success {
+        color: #00BC8F;
+
+    }
+
+    & .error {
+        color: red;
+    }
 }

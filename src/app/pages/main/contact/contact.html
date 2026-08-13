@@ -83,11 +83,11 @@
                     {{ submitStatus() === 'sending' ? ("app.sending" | translate) : ("app.sendMessage" | translate) }}
                 </button>
             </form>
-            <!-- @if (submitStatus() === 'success') {
-        <p class="form-status success">{{"app.messageSent" |translate}}</p>
-        } @else if (submitStatus() === 'error') {
-        <p class="form-status error">{{"app.messageError" |translate}}</p>
-        } -->
+            @if (submitStatus() === 'success') {
+            <p class="form-status success">{{"app.messageSent" |translate}}</p>
+            } @else if (submitStatus() === 'error') {
+            <p class="form-status error">{{"app.messageError" |translate}}</p>
+            }
         </div>
         <div (click)="scrollToTop()" class="arrow-wrap">
             <svg width="39" height="90" viewBox="0 0 39 90" fill="none" xmlns="http://www.w3.org/2000/svg">

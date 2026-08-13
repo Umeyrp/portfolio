@@ -6,6 +6,7 @@
         "skills-text-1": "Don't see the skill you need?",
         "skills-text-2": "I'm always ready to learn!",
         "contactMe": "Contact me",
+        "contact": "Contact",
         "scroll": "Scroll",
         "down": "Down",
         "portfolio-text-1": "Explore a selection of my work here - Interact with",
@@ -31,6 +32,8 @@
         "validEmail": "Please enter a valid E-mail",
         "sending": "sending..",
         "remote": "Open to work Remote",
-        "based": "Based in"
+        "based": "Based in",
+        "messageSent": "Message sent successfully!",
+        "messageError": "Sending failed!"
     }
 }

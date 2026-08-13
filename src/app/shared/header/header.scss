@@ -121,14 +121,14 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 42px;
     height: 100dvh;
-    padding-top: 50px;
+    padding-top: 30px;
     background-color: #FFFCF3;
     animation: fadeIn 200ms ease-in-out;
 
     & button {
-        padding: 20px 0;
+        padding: 4px 0;
         background: none;
         border: none;
         cursor: pointer;
