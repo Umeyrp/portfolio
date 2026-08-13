@@ -29,6 +29,8 @@
         "messageRequired": "Ihre Nachricht wird benötigt",
         "privacyRequired": "Bitte akzeptieren Sie die Datenschutzerklärung.",
         "validEmail": "Bitte schreibe eine gültige E-mail",
-        "sending": "wird gesendet.."
+        "sending": "wird gesendet..",
+        "remote": "Offen für Remote-Arbeit",
+        "based": "Ansässig in"
     }
 }

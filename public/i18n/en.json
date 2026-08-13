@@ -29,6 +29,8 @@
         "messageRequired": "Your message is required",
         "privacyRequired": "Please accept the privacy policy.",
         "validEmail": "Please enter a valid E-mail",
-        "sending": "sending.."
+        "sending": "sending..",
+        "remote": "Open to work Remote",
+        "based": "Based in"
     }
 }

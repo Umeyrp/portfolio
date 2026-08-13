@@ -6,12 +6,6 @@ header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json; charset=utf-8");
 
-// ------------------------------------------------------------
-// WICHTIG:
-// Deine eigene Adresse in Zeile 15 setzen!
-// ------------------------------------------------------------
-
-// >>> DEINE EMAIL HIER EINTRAGEN <<<
 $siteEmail = "mu.kemiksiz@gmail.com";
 
 switch ($_SERVER['REQUEST_METHOD']) {

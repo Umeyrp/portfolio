@@ -58,6 +58,7 @@ export class Contact {
                             message: '',
                             privacyAccepted: false,
                         });
+                        this.contactForm().reset();
                     } else {
                         this.submitStatus.set('error');
                     }

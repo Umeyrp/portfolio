@@ -1,28 +1,29 @@
 @use 'mixins' as *;
 
 .footer-section {
-    padding: 40px 100px;
-    padding-top: 55px;
     background-color: black;
-    color: #FFFCF3;
 }
 
 .footer-bottom {
     position: relative;
     display: flex;
     justify-content: space-between;
+    padding: 40px 100px;
+    padding-top: 55px;
+    background-color: black;
+    color: #FFFCF3;
 
     @include mobile {
+        flex-direction: column-reverse;
         align-items: center;
         gap: 28px;
-        flex-direction: column-reverse;
     }
 }
 
 .footer-legal {
     position: absolute;
-    right: 0;
-    bottom: -20px;
+    right: 100px;
+    bottom: 24px;
     display: inline-block;
     text-decoration: none;
     color: #FFFCF3;

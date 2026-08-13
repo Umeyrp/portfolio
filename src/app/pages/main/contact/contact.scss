@@ -1,6 +1,6 @@
 @use 'mixins' as *;
 
-.contact-section {
+.wrapper {
     position: relative;
     padding: 0 100px;
     padding-top: 166px;
@@ -234,7 +234,7 @@
             cursor: pointer;
         }
 
-        @include mobile{
+        @include mobile {
             font-size: 21px;
             padding: 20px 40px;
         }
@@ -364,7 +364,7 @@ input:checked+.checkmark::after {
         height: 200%;
     }
 
-    @include mobile{
+    @include mobile {
         display: none;
     }
 }

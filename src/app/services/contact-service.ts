@@ -16,7 +16,7 @@ export interface ContactResponse {
 @Injectable({ providedIn: 'root' })
 export class ContactService {
     private http = inject(HttpClient);
-    private readonly endpoint = 'https://deine-domain.de/send-mail.php';
+    private readonly endpoint = 'https://muhammedkemiksiz.de/send-mail.php';
 
     send(payload: ContactPayload) {
         return firstValueFrom(
