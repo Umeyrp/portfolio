@@ -46,7 +46,7 @@
             },
             "hosting": {
                 "title": "3. Hosting",
-                "text": "This website is hosted by Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany. When you visit our website, Hetzner collects various log files including your IP address. Further information can be found in Hetzner's privacy policy: https://www.hetzner.com/de/rechtliches/datenschutz.<br><br>The use of Hetzner is based on our legitimate interest in a reliable presentation of our website (Art. 6 (1) lit. f GDPR)."
+                "text": "This website is hosted by Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany. When you visit our website, Hetzner collects various log files including your IP address. Further information can be found in Hetzner's privacy policy: <a href='https://www.hetzner.com/de/rechtliches/datenschutz' class='host-link' target='_blank'>https://www.hetzner.com/de/rechtliches/datenschutz</a>.<br><br>The use of Hetzner is based on our legitimate interest in a reliable presentation of our website (Art. 6 (1) lit. f GDPR)."
             },
             "logfiles": {
                 "title": "4. Server log files",

@@ -46,7 +46,7 @@
             },
             "hosting": {
                 "title": "3. Hosting",
-                "text": "Diese Website wird bei dem Hosting-Anbieter Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Deutschland gehostet. Wenn du unsere Website besuchst, erfasst Hetzner verschiedene Logfiles inklusive deiner IP-Adresse. Weitere Informationen entnimmst du der Datenschutzerklärung von Hetzner: https://www.hetzner.com/de/rechtliches/datenschutz.<br><br>Die Verwendung von Hetzner erfolgt auf Grundlage unseres berechtigten Interesses an einer möglichst zuverlässigen Darstellung unserer Website (Art. 6 Abs. 1 lit. f DSGVO)."
+                "text": "Diese Website wird bei dem Hosting-Anbieter Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Deutschland gehostet. Wenn du unsere Website besuchst, erfasst Hetzner verschiedene Logfiles inklusive deiner IP-Adresse. Weitere Informationen entnimmst du der Datenschutzerklärung von Hetzner: <a href='https://www.hetzner.com/de/rechtliches/datenschutz' class='host-link' target='_blank'>https://www.hetzner.com/de/rechtliches/datenschutz</a>.<br><br>Die Verwendung von Hetzner erfolgt auf Grundlage unseres berechtigten Interesses an einer möglichst zuverlässigen Darstellung unserer Website (Art. 6 Abs. 1 lit. f DSGVO)."
             },
             "logfiles": {
                 "title": "4. Server-Logfiles",
