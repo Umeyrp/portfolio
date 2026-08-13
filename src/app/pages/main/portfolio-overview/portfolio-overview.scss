@@ -314,8 +314,19 @@
         text-align: end;
     }
 
-    & button {
+    & .buttons {
         align-self: end;
+    }
+
+    @include mobile {
+
+        & .project-details {
+            text-align: start;
+        }
+
+        & .buttons {
+            align-self: start;
+        }
     }
 
     @include mobile {
