@@ -117,3 +117,7 @@ h1 {
         @include font(overpass, 400, 1rem, 120%, 0%);
     }
 }
+
+:host ::ng-deep .host-link {
+    word-break: break-all;
+}

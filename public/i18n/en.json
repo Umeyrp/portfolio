@@ -34,6 +34,84 @@
         "remote": "Open to work Remote",
         "based": "Based in",
         "messageSent": "Message sent successfully!",
-        "messageError": "Sending failed!"
+        "messageError": "Sending failed!",
+        "privacyPolicyContent": {
+            "responsible": {
+                "title": "1. Controller",
+                "text": "The controller within the meaning of the General Data Protection Regulation (GDPR) is:<br><br>Muhammed Kemiksiz<br>Evastraße 8<br>45889 Gelsenkirchen<br>Email: kontakt@muhammedkemiksiz.de"
+            },
+            "general": {
+                "title": "2. General information on data processing",
+                "text": "We only process personal data of our users to the extent necessary to provide a functioning website and our content and services. The processing of personal data only takes place with the user's consent or on the basis of a legal permission (Art. 6 (1) lit. a, b and f GDPR)."
+            },
+            "hosting": {
+                "title": "3. Hosting",
+                "text": "This website is hosted by Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany. When you visit our website, Hetzner collects various log files including your IP address. Further information can be found in Hetzner's privacy policy: https://www.hetzner.com/de/rechtliches/datenschutz.<br><br>The use of Hetzner is based on our legitimate interest in a reliable presentation of our website (Art. 6 (1) lit. f GDPR)."
+            },
+            "logfiles": {
+                "title": "4. Server log files",
+                "text": "When you visit this website, our hosting provider automatically collects and stores information in so-called server log files, which your browser automatically transmits. These are:<br><br>– browser type and version<br>– operating system used<br>– referrer URL<br>– hostname of the accessing computer<br>– time of the server request<br>– IP address<br><br>This data is not merged with other data sources. The legal basis for processing is Art. 6 (1) lit. f GDPR."
+            },
+            "contactForm": {
+                "title": "5. Contact form",
+                "text": "If you send us inquiries via the contact form, the information you provide (name, email address, message) will be stored by us for the purpose of processing the request and in case of follow-up questions. We do not share this data without your consent.<br><br>Processing of the data entered in the contact form is based on your consent (Art. 6 (1) lit. a GDPR), which you grant by checking the corresponding checkbox before submitting. You can revoke this consent at any time, e.g. by email.<br><br>The data entered will remain with us until you ask us to delete it, revoke your consent, or the purpose no longer applies. Mandatory statutory retention periods remain unaffected.<br><br>The entered data is transmitted to our server-side script at muhammedkemiksiz.de for processing and forwarded to us by email."
+            },
+            "ssl": {
+                "title": "6. SSL/TLS encryption",
+                "text": "For security reasons and to protect the transmission of confidential content, this site uses SSL/TLS encryption. You can recognize an encrypted connection by the fact that the address line of the browser changes from \"http://\" to \"https://\" and by the lock symbol in your browser line."
+            },
+            "rights": {
+                "title": "7. Your rights as a data subject",
+                "text": "Within the framework of applicable legal provisions, you have the right at any time to free information about your stored personal data, its origin and recipients, and the purpose of the data processing, as well as a right to correction, restriction or deletion of this data (Art. 15-18 GDPR). You also have a right to object to processing (Art. 21 GDPR) and a right to data portability (Art. 20 GDPR).<br><br>You also have the right to lodge a complaint with a data protection supervisory authority about our processing of your personal data. The competent authority is the State Commissioner for Data Protection and Freedom of Information North Rhine-Westphalia.<br><br>For any data protection questions, feel free to contact us at the email address given above.<br><br>Last updated: August 2026"
+            }
+        },
+        "legalNoticeContent": {
+            "info": {
+                "title": "Information according to § 5 DDG",
+                "text": "Muhammed Kemiksiz<br>Evastraße 8<br>45889 Gelsenkirchen"
+            },
+            "contact": {
+                "title": "Contact",
+                "text": "Phone: 017684991320<br>Email: kontakt@muhammedkemiksiz.de"
+            },
+            "responsibleContent": {
+                "title": "Responsible for content according to § 18 (2) MStV",
+                "text": "Muhammed Kemiksiz<br>Evastraße 8<br>45889 Gelsenkirchen"
+            },
+            "disclaimer": {
+                "title": "Disclaimer",
+                "text": "The content of this website has been created with the greatest possible care. However, we cannot guarantee the accuracy, completeness, and timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with § 7 (1) DDG under general laws. According to §§ 8 to 10 DDG, however, we as a service provider are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.<br><br>We are not responsible for the content of external links; the operators of the linked pages are solely responsible for their content."
+            },
+            "agb": {
+                "acceptance": {
+                    "title": "Acceptance of terms",
+                    "text": "By accessing and using Portfolio (Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments thereto that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice."
+                },
+                "scope": {
+                    "title": "Scope and ownership of the product",
+                    "text": "Portfolio has been developed as part of a student group project in a web development bootcamp at the Developer Akademie GmbH. It has an educational purpose and is not intended for extensive personal & business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product.<br><br>The design of Portfolio is owned by the Developer Akademie GmbH. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited."
+                },
+                "proprietary": {
+                    "title": "Proprietary rights",
+                    "text": "Aside from the design owned by Developer Akademie GmbH, we, the listed students, retain all proprietary rights in Portfolio, including any associated copyrighted material, trademarks, and other proprietary information."
+                },
+                "use": {
+                    "title": "Use of the product",
+                    "text": "Portfolio is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of Portfolio for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of Portfolio."
+                },
+                "disclaimer": {
+                    "title": "Disclaimer of warranties and limitation of liability",
+                    "text": "Portfolio is provided \"as is\" without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will we, the listed students, or the Developer Akademie, be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of Portfolio."
+                },
+                "indemnity": {
+                    "title": "Indemnity",
+                    "text": "You agree to indemnify, defend and hold harmless us, the listed students, the Developer Akademie, and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of Portfolio and/or your breach of this Legal Notice.<br><br>For any questions or notices, please contact us at kontakt@muhammedkemiksiz.de.<br><br>Date: July 26, 2025"
+                }
+            }
+        },
+        "aboutMeText": "I'm a FullStack developer with a genuine passion for clean code and thoughtful solutions. New technologies like Angular or Laravel excite me, because web development never stands still – and neither do I. I approach problems methodically: understand, break down, test, refine. Analytical thinking and creativity matter to me just as much as persistence and working well with a team.",
+        "project-description-1": "An interactive Pokédex developed with HTML, CSS, and JavaScript. Pokémon data is fetched from an external API and displayed in a clear and user-friendly way. Users can discover Pokémon, search for specific ones, and view detailed information such as types, abilities, and stats.",
+        "project-description-2": "An interactive 2D arcade game developed with HTML, CSS, and JavaScript. The project focuses particularly on object-oriented programming (OOP). Players fight their way through different levels, defeat enemies, and collect points while exploring the game world.",
+        "project-description-3": "An interactive delivery app developed with HTML, CSS, and JavaScript. Users can browse different dishes, add them to their shopping cart, and manage their orders in a clear and intuitive way. The app provides a user-friendly interface and a realistic ordering experience."
     }
 }

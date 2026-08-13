@@ -19,7 +19,7 @@
         "textMe": "Lass uns deine Idee zum Leben erwecken.",
         "contact-text-1": "Ich habe die",
         "contact-text-2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
-        "privacyPolicy": "Datenschutz\u00ADerklärung",
+        "privacyPolicy": "Datenschutz­erklärung",
         "sendMessage": "Nachricht senden",
         "legalNotice": "Impressum",
         "yourName": "Ihr Name",
@@ -34,6 +34,84 @@
         "remote": "Offen für Remote-Arbeit",
         "based": "Ansässig in",
         "messageSent": "Nachricht erfolgreich gesendet!",
-        "messageError": "Senden fehlgeschlagen!"
+        "messageError": "Senden fehlgeschlagen!",
+        "privacyPolicyContent": {
+            "responsible": {
+                "title": "1. Verantwortlicher",
+                "text": "Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:<br><br>Muhammed Kemiksiz<br>Evastraße 8<br>45889 Gelsenkirchen<br>E-Mail: kontakt@muhammedkemiksiz.de"
+            },
+            "general": {
+                "title": "2. Allgemeines zur Datenverarbeitung",
+                "text": "Wir verarbeiten personenbezogene Daten unserer Nutzer grundsätzlich nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die Verarbeitung personenbezogener Daten erfolgt regelmäßig nur nach Einwilligung des Nutzers oder auf Grundlage einer gesetzlichen Erlaubnis (Art. 6 Abs. 1 lit. a, b und f DSGVO)."
+            },
+            "hosting": {
+                "title": "3. Hosting",
+                "text": "Diese Website wird bei dem Hosting-Anbieter Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Deutschland gehostet. Wenn du unsere Website besuchst, erfasst Hetzner verschiedene Logfiles inklusive deiner IP-Adresse. Weitere Informationen entnimmst du der Datenschutzerklärung von Hetzner: https://www.hetzner.com/de/rechtliches/datenschutz.<br><br>Die Verwendung von Hetzner erfolgt auf Grundlage unseres berechtigten Interesses an einer möglichst zuverlässigen Darstellung unserer Website (Art. 6 Abs. 1 lit. f DSGVO)."
+            },
+            "logfiles": {
+                "title": "4. Server-Logfiles",
+                "text": "Beim Aufruf dieser Website erhebt und speichert der Hosting-Provider automatisch Informationen in sogenannten Server-Logfiles, die dein Browser automatisch übermittelt. Dies sind:<br><br>– Browsertyp und -version<br>– verwendetes Betriebssystem<br>– Referrer URL<br>– Hostname des zugreifenden Rechners<br>– Uhrzeit der Serveranfrage<br>– IP-Adresse<br><br>Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO."
+            },
+            "contactForm": {
+                "title": "5. Kontaktformular",
+                "text": "Wenn du uns per Kontaktformular Anfragen zukommen lässt, werden deine Angaben (Name, E-Mail-Adresse, Nachricht) zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne deine Einwilligung weiter.<br><br>Die Verarbeitung der eingegebenen Daten erfolgt auf Grundlage deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), die du durch Anklicken des entsprechenden Kontrollkästchens vor dem Absenden erteilst. Du kannst diese Einwilligung jederzeit widerrufen, z. B. per E-Mail.<br><br>Die eingegebenen Daten verbleiben bei uns, bis du uns zur Löschung aufforderst, deine Einwilligung widerrufst oder der Zweck entfällt. Zwingende gesetzliche Aufbewahrungsfristen bleiben unberührt.<br><br>Die eingegebenen Daten werden zur Verarbeitung über eine Verbindung an unser serverseitiges Skript auf muhammedkemiksiz.de übertragen und per E-Mail an uns weitergeleitet."
+            },
+            "ssl": {
+                "title": "6. SSL-/TLS-Verschlüsselung",
+                "text": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz vertraulicher Inhalte eine SSL-/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennst du daran, dass die Adresszeile des Browsers von \"http://\" auf \"https://\" wechselt und an dem Schloss-Symbol in deiner Browserzeile."
+            },
+            "rights": {
+                "title": "7. Deine Rechte als betroffene Person",
+                "text": "Du hast im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über deine gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten (Art. 15–18 DSGVO). Außerdem steht dir ein Widerspruchsrecht (Art. 21 DSGVO) sowie ein Recht auf Datenübertragbarkeit (Art. 20 DSGVO) zu.<br><br>Zudem hast du das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Zuständig ist die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen.<br><br>Für Fragen zum Datenschutz kannst du dich jederzeit unter der oben genannten E-Mail-Adresse an uns wenden.<br><br>Stand: August 2026"
+            }
+        },
+        "legalNoticeContent": {
+            "info": {
+                "title": "Angaben gemäß § 5 DDG",
+                "text": "Muhammed Kemiksiz<br>Evastraße 8<br>45889 Gelsenkirchen"
+            },
+            "contact": {
+                "title": "Kontakt",
+                "text": "Telefon: 017684991320<br>E-Mail: kontakt@muhammedkemiksiz.de"
+            },
+            "responsibleContent": {
+                "title": "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
+                "text": "Muhammed Kemiksiz<br>Evastraße 8<br>45889 Gelsenkirchen"
+            },
+            "disclaimer": {
+                "title": "Haftungsausschluss",
+                "text": "Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.<br><br>Für die Inhalte externer Links sind ausschließlich deren Betreiber verantwortlich."
+            },
+            "agb": {
+                "acceptance": {
+                    "title": "Annahme der Bedingungen",
+                    "text": "Durch den Zugriff auf und die Nutzung von Portfolio (Produkt) erkennst du die folgenden Allgemeinen Geschäftsbedingungen sowie alle Richtlinien, Leitlinien oder Änderungen, die dir von Zeit zu Zeit vorgelegt werden können, an und stimmst ihnen zu. Wir, die genannten Studierenden, können die Bedingungen von Zeit zu Zeit ohne vorherige Ankündigung aktualisieren oder ändern."
+                },
+                "scope": {
+                    "title": "Umfang und Eigentum am Produkt",
+                    "text": "Portfolio wurde im Rahmen eines studentischen Gruppenprojekts in einem Webentwicklungs-Bootcamp der Developer Akademie GmbH entwickelt. Es dient Bildungszwecken und ist nicht für eine umfangreiche private oder geschäftliche Nutzung vorgesehen. Daher können wir keine durchgehende Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder sonstige Qualität dieses Produkts garantieren.<br><br>Das Design von Portfolio ist Eigentum der Developer Akademie GmbH. Eine unbefugte Nutzung, Vervielfältigung, Veränderung, Verbreitung oder Nachbildung des Designs ist strengstens untersagt."
+                },
+                "proprietary": {
+                    "title": "Eigentumsrechte",
+                    "text": "Abgesehen vom Design, das im Eigentum der Developer Akademie GmbH steht, behalten wir, die genannten Studierenden, alle Eigentumsrechte an Portfolio, einschließlich aller damit verbundenen urheberrechtlich geschützten Materialien, Marken und sonstigen geschützten Informationen."
+                },
+                "use": {
+                    "title": "Nutzung des Produkts",
+                    "text": "Portfolio ist ausschließlich für rechtmäßige Zwecke im Einklang mit allen geltenden Gesetzen und Vorschriften bestimmt. Jegliche Nutzung von Portfolio für illegale Aktivitäten oder zur Belästigung, Schädigung, Bedrohung oder Einschüchterung anderer Personen ist strengstens untersagt. Du bist allein verantwortlich für deine Interaktionen mit anderen Nutzern von Portfolio."
+                },
+                "disclaimer": {
+                    "title": "Haftungsausschluss und Haftungsbeschränkung",
+                    "text": "Portfolio wird \"wie besehen\" ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt, einschließlich, aber nicht beschränkt auf die stillschweigenden Gewährleistungen der Marktgängigkeit, der Eignung für einen bestimmten Zweck und der Nichtverletzung von Rechten Dritter. In keinem Fall haften wir, die genannten Studierenden, oder die Developer Akademie für direkte, indirekte, zufällige, besondere, Folge- oder exemplarische Schäden, einschließlich, aber nicht beschränkt auf Schäden durch entgangenen Gewinn, Geschäftswert, Nutzung, Daten oder sonstige immaterielle Verluste, selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden, die im Zusammenhang mit der Nutzung oder Leistung von Portfolio entstehen."
+                },
+                "indemnity": {
+                    "title": "Freistellung",
+                    "text": "Du verpflichtest dich, uns, die genannten Studierenden, die Developer Akademie sowie unsere verbundenen Unternehmen, Partner, leitenden Angestellten, Direktoren, Vertreter und Mitarbeiter von jeglichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Rechtsanwaltskosten) freizustellen und schadlos zu halten, die sich aus deiner Nutzung von Portfolio und/oder deinem Verstoß gegen dieses Impressum ergeben.<br><br>Bei Fragen oder Mitteilungen kontaktiere uns bitte unter kontakt@muhammedkemiksiz.de.<br><br>Datum: 26. Juli 2025"
+                }
+            }
+        },
+        "aboutMeText": "Ich bin FullStack-Entwickler mit einer klaren Leidenschaft für sauberen Code und durchdachte Lösungen. Neue Technologien wie Angular oder Laravel reizen mich, weil sich die Webentwicklung ständig weiterentwickelt – stillzustehen ist für mich keine Option. An Probleme gehe ich strukturiert heran: verstehen, zerlegen, testen, verfeinern. Dabei zählen für mich analytisches Denken und Kreativität genauso wie Beharrlichkeit und der Austausch im Team.",
+        "project-description-1": "Ein interaktiver Pokédex, entwickelt mit HTML, CSS und JavaScript. Über eine externe API werden Pokémon-Daten abgerufen und übersichtlich dargestellt. Nutzer können Pokémon entdecken, nach ihnen suchen und detaillierte Informationen wie Typ, Fähigkeiten und Werte anzeigen.",
+        "project-description-2": "Ein interaktives 2D-Arcade-Spiel, entwickelt mit HTML, CSS und JavaScript. Der Fokus liegt dabei besonders auf der objektorientierten Programmierung (OOP). Spieler kämpfen sich durch verschiedene Level, besiegen Gegner und sammeln Punkte, während sie die Spielwelt erkunden.",
+        "project-description-3": "Eine interaktive Delivery-App, entwickelt mit HTML, CSS und JavaScript. Nutzer können verschiedene Gerichte auswählen, in den Warenkorb legen und ihre Bestellung übersichtlich verwalten. Die App bietet eine intuitive Benutzeroberfläche und eine realistische Bestellfunktion."
     }
 }

@@ -127,16 +127,23 @@ header {
     background-color: #FFFCF3;
     animation: fadeIn 200ms ease-in-out;
 
-    & button {
-        padding: 4px 0;
-        background: none;
-        border: none;
-        cursor: pointer;
-        @include font(syne, 700, 32px, 120%, 0%);
+    & .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
 
-        &:hover {
-            color: #00BC8F;
-            border-color: #00BC8F;
+        & button {
+            padding: 4px 0;
+            background: none;
+            border: none;
+            cursor: pointer;
+            @include font(syne, 700, 32px, 120%, 0%);
+
+            &:hover {
+                color: #00BC8F;
+                border-color: #00BC8F;
+            }
         }
     }
 }
@@ -231,13 +238,13 @@ header {
 }
 
 .menu-footer-socials {
+    position: relative;
     z-index: 20;
+    top: 21%;
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 42px;
-    top: 21%;
-    position: relative;
     padding-right: 100px;
     padding-bottom: 20px;
 

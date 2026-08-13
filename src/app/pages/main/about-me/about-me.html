@@ -2,13 +2,7 @@
     <h2>{{"app.aboutMe" | translate}}</h2>
     <div class="wrapper">
         <div class="about-me-left">
-            <p>Write some information about yourself that is IT related. Why are you passionate about coding? Show a
-                desire
-                to learn new technologies <br>
-                Add a brief description of your problem-solving approach.<br><br>You can include some key traits like:
-                analytical
-                thinking, creativity, persistence and collaboration.
-            </p>
+            <p [innerHTML]="'app.aboutMeText' | translate"></p>
             <div class="info-wrapper">
                 <div class="info">
                     <svg width="37" height="29" viewBox="0 0 37 29" fill="none" xmlns="http://www.w3.org/2000/svg">

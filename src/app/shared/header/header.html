@@ -61,11 +61,13 @@
 
 @if (isMenuOpen()) {
 <div class="menu-overlay">
-    <button (click)="goToSection('aboutMe')">{{"app.aboutMe" |translate}}</button>
-    <button (click)="goToSection('skills')">{{"app.mySkills" |translate}}</button>
-    <button (click)="goToSection('portfolio')">Portfolio</button>
-    <button (click)="goToSection('references')">{{"app.references" |translate}}</button>
-    <button (click)="goToSection('contact')">{{"app.contact" |translate}}</button>
+    <div class="buttons">
+        <button (click)="goToSection('aboutMe')">{{"app.aboutMe" |translate}}</button>
+        <button (click)="goToSection('skills')">{{"app.mySkills" |translate}}</button>
+        <button (click)="goToSection('portfolio')">Portfolio</button>
+        <button (click)="goToSection('references')">{{"app.references" |translate}}</button>
+        <button (click)="goToSection('contact')">{{"app.contact" |translate}}</button>
+    </div>
     <div class="menu-footer">
         <div class="menu-footer-text">
             <h2>{{"app.sayHi" |translate}}</h2>
