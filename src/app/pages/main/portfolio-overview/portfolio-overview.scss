@@ -344,7 +344,7 @@ button {
 
     &:hover {
         @include font("overpass", 700, 23px, 120%, 0%);
-        padding: 20px 90px;
+        // padding: 20px 90px;
         box-shadow: 5px 5px 15px 0px #00000026;
     }
 
@@ -356,5 +356,31 @@ button {
 
     @include mobile {
         padding: 20px 40px;
+    }
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    & .live {
+        padding: 20px 30px;
+        font-weight: 700;
+        color: #00BC8F;
+    }
+
+    & .github {
+        &::before {
+            display: block;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+            font-weight: 700;
+            content: attr(data-text);
+        }
     }
 }
