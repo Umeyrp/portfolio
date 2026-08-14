@@ -19,10 +19,7 @@ export class LanguageService {
         this.translate.onLangChange.subscribe((event) => {
             this.currentLanguage.set(event.lang);
             this.document.documentElement.lang = event.lang;
-        });
-
-        effect(() => {
-            localStorage.setItem("currentLanguage", this.currentLanguage());
+            localStorage.setItem('currentLanguage', event.lang);
         });
     }
 
