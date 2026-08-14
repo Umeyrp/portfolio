@@ -74,20 +74,23 @@ body {
     background-color: #FFFCF3;
 }
 
-header,
 .hero-section,
-.menu-overlay,
 .about-me-section,
 .arrow-right-section,
 .skills-section,
 .arrow-right-section,
 .portfolio-overview-section,
-.references-section, main {
-    margin: 0rem max(calc(50% - 960px), 0rem);
+.references-section,
+main {
+    margin: 0rem max(calc(50% - 720px), 0rem);
 }
 
-.contact-section,
+header,
+.menu-overlay,
+.contact-section-wrapper,
+.menu-footer-socials,
+.menu-footer-text,
 footer {
-    padding: 0rem max(calc(50% - 960px), 0rem);
+    padding: 0rem max(calc(50% - 720px), 0rem);
 
 }
