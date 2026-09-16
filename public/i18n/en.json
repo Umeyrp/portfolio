@@ -112,8 +112,8 @@
       }
     },
     "aboutMeText": "I'm a FullStack developer with a genuine passion for clean code and thoughtful solutions. New technologies like Angular or Laravel excite me, because web development never stands still – and neither do I. I approach problems methodically: understand, break down, test, refine. Analytical thinking and creativity matter to me just as much as persistence and working well with a team.",
-    "project-description-1": "An interactive Pokédex developed with HTML, CSS, and JavaScript. Pokémon data is fetched from an external API and displayed in a clear and user-friendly way. Users can discover Pokémon, search for specific ones, and view detailed information such as types, abilities, and stats.",
+    "project-description-1": "Join is a Kanban board web app built with Angular and Supabase, developed as a training project during the Developer Akademie bootcamp. It lets you organize tasks across columns (To Do, In Progress, Await Feedback, Done), assign them to contacts, and track progress with drag and drop.",
     "project-description-2": "An interactive 2D arcade game developed with HTML, CSS, and JavaScript. The project focuses particularly on object-oriented programming (OOP). Players fight their way through different levels, defeat enemies, and collect points while exploring the game world.",
-    "project-description-3": "An interactive delivery app developed with HTML, CSS, and JavaScript. Users can browse different dishes, add them to their shopping cart, and manage their orders in a clear and intuitive way. The app provides a user-friendly interface and a realistic ordering experience."
+    "project-description-3": "An interactive Pokédex developed with HTML, CSS, and JavaScript. Pokémon data is fetched from an external API and displayed in a clear and user-friendly way. Users can discover Pokémon, search for specific ones, and view detailed information such as types, abilities, and stats."
   }
 }

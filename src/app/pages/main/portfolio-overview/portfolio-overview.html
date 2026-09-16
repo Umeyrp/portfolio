@@ -1,71 +1,74 @@
 <section class="portfolio-overview-section" id="portfolio">
-    <div class="portfolio-header">
-        <h2>Portfolio</h2>
-        <p>{{"app.portfolio-text-1" |translate}} <br> {{"app.portfolio-text-2" |translate}}</p>
+  <div class="portfolio-header">
+    <h2>Portfolio</h2>
+    <p>
+      {{ 'app.portfolio-text-1' | translate }} <br />
+      {{ 'app.portfolio-text-2' | translate }}
+    </p>
+  </div>
+  <div class="projects-wrapper">
+    <div class="project odd">
+      <h3 class="project-number">01/03</h3>
+      <div class="project-img">
+        <img src="/images/join-thumbnail.png" alt="" />
+      </div>
+      <div class="project-details">
+        <div class="project-info">
+          <h3>Join</h3>
+          <p class="project-stack">Angular | TypeScript | Supabase</p>
+          <p class="project-description">{{ 'app.project-description-1' | translate }}</p>
+          <div class="buttons">
+            <a href="https://github.com/Umeyrp/join" target="_blank">
+              <button class="github" data-text="GitHub">GitHub</button>
+            </a>
+            <a href="https://join.muhammedkemiksiz.de/" target="_blank">
+              <button class="live">Live</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="projects-wrapper">
-        <div class="project odd">
-            <h3 class="project-number">01/03</h3>
-            <div class="project-img">
-                <img src="/images/pokedex-thumbnail.png" alt="">
-            </div>
-            <div class="project-details">
-                <div class="project-info">
-                    <h3>Pokedex</h3>
-                    <p class="project-stack">Javascript | HTML | CSS | API</p>
-                    <p class="project-description">{{"app.project-description-1" |translate}}</p>
-                    <div class="buttons">
-                        <a href="https://github.com/Umeyrp/pokedex" target="_blank">
-                            <button class="github" data-text="GitHub">GitHub</button>
-                        </a>
-                        <a href="https://www.pokedex.muhammedkemiksiz.de/" target="_blank">
-                            <button class="live">Live</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div class="project even">
+      <h3 class="project-number">02/03</h3>
+      <div class="project-img">
+        <img src="/images/elpolloloco-thumbnail.png" alt="" />
+      </div>
+      <div class="project-details">
+        <div class="project-info">
+          <h3>El Pollo Loco</h3>
+          <p class="project-stack">Javascript | HTML | CSS | OOP</p>
+          <p class="project-description">{{ 'app.project-description-2' | translate }}</p>
+          <div class="buttons">
+            <a href="https://github.com/Umeyrp/el-pollo-loco" target="_blank">
+              <button class="github" data-text="GitHub">GitHub</button>
+            </a>
+            <a href="https://elpolloloco.muhammedkemiksiz.de/" target="_blank">
+              <button class="live">Live</button>
+            </a>
+          </div>
         </div>
-        <div class="project even">
-            <h3 class="project-number">02/03</h3>
-            <div class="project-img">
-                <img src="/images/elpolloloco-thumbnail.png" alt="">
-            </div>
-            <div class="project-details">
-                <div class="project-info">
-                    <h3>El Pollo Loco</h3>
-                    <p class="project-stack">Javascript | HTML | CSS | OOP</p>
-                    <p class="project-description">{{"app.project-description-2" |translate}}</p>
-                    <div class="buttons">
-                        <a href="https://github.com/Umeyrp/el-pollo-loco" target="_blank">
-                            <button class="github" data-text="GitHub">GitHub</button>
-                        </a>
-                        <a href="https://elpolloloco.muhammedkemiksiz.de/" target="_blank">
-                            <button class="live">Live</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="project odd">
-            <h3 class="project-number">03/03</h3>
-            <div class="project-img">
-                <img src="/images/delivery-app-thumbnail.png" alt="">
-            </div>
-            <div class="project-details">
-                <div class="project-info">
-                    <h3>Delivery App</h3>
-                    <p class="project-stack">Javascript | HTML | CSS</p>
-                    <p class="project-description">{{"app.project-description-3" |translate}}</p>
-                    <div class="buttons">
-                        <a href="https://github.com/Umeyrp/food-order-site" target="_blank">
-                            <button class="github" data-text="GitHub">GitHub</button>
-                        </a>
-                        <a href="https://deliveryapp.muhammedkemiksiz.de/" target="_blank">
-                            <button class="live">Live</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="project odd">
+      <h3 class="project-number">03/03</h3>
+      <div class="project-img">
+        <img src="/images/pokedex-thumbnail.png" alt="" />
+      </div>
+      <div class="project-details">
+        <div class="project-info">
+          <h3>Pokedex</h3>
+          <p class="project-stack">Javascript | HTML | CSS | API</p>
+          <p class="project-description">{{ 'app.project-description-3' | translate }}</p>
+          <div class="buttons">
+            <a href="https://github.com/Umeyrp/pokedex" target="_blank">
+              <button class="github" data-text="GitHub">GitHub</button>
+            </a>
+            <a href="https://www.pokedex.muhammedkemiksiz.de/" target="_blank">
+              <button class="live">Live</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

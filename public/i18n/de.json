@@ -112,8 +112,8 @@
       }
     },
     "aboutMeText": "Ich bin FullStack-Entwickler mit einer klaren Leidenschaft für sauberen Code und durchdachte Lösungen. Neue Technologien wie Angular oder Laravel reizen mich, weil sich die Webentwicklung ständig weiterentwickelt – stillzustehen ist für mich keine Option. An Probleme gehe ich strukturiert heran: verstehen, zerlegen, testen, verfeinern. Dabei zählen für mich analytisches Denken und Kreativität genauso wie Beharrlichkeit und der Austausch im Team.",
-    "project-description-1": "Ein interaktiver Pokédex, entwickelt mit HTML, CSS und JavaScript. Über eine externe API werden Pokémon-Daten abgerufen und übersichtlich dargestellt. Nutzer können Pokémon entdecken, nach ihnen suchen und detaillierte Informationen wie Typ, Fähigkeiten und Werte anzeigen.",
+    "project-description-1": "„Join“ ist eine mit Angular und Supabase erstellte Kanban-Board-Webanwendung, die im Rahmen des Developer-Akademie-Bootcamps als Schulungsprojekt entwickelt wurde. Mit ihr können Sie Aufgaben in Spalten organisieren („Zu erledigen“, „In Bearbeitung“, „Wartet auf Feedback“, „Erledigt“), sie Kontakten zuweisen und den Fortschritt per Drag-and-Drop verfolgen.",
     "project-description-2": "Ein interaktives 2D-Arcade-Spiel, entwickelt mit HTML, CSS und JavaScript. Der Fokus liegt dabei besonders auf der objektorientierten Programmierung (OOP). Spieler kämpfen sich durch verschiedene Level, besiegen Gegner und sammeln Punkte, während sie die Spielwelt erkunden.",
-    "project-description-3": "Eine interaktive Delivery-App, entwickelt mit HTML, CSS und JavaScript. Nutzer können verschiedene Gerichte auswählen, in den Warenkorb legen und ihre Bestellung übersichtlich verwalten. Die App bietet eine intuitive Benutzeroberfläche und eine realistische Bestellfunktion."
+    "project-description-3": "Ein interaktiver Pokédex, entwickelt mit HTML, CSS und JavaScript. Über eine externe API werden Pokémon-Daten abgerufen und übersichtlich dargestellt. Nutzer können Pokémon entdecken, nach ihnen suchen und detaillierte Informationen wie Typ, Fähigkeiten und Werte anzeigen."
   }
 }
